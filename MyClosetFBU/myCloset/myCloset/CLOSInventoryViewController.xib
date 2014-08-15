@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CLOSInventoryViewController">
+            <connections>
+                <outlet property="loadinglabel" destination="5La-M4-6fX" id="buG-kS-fyk"/>
+                <outlet property="requestedOfYouTableView" destination="nza-k2-8C9" id="Z1C-9P-YfD"/>
+                <outlet property="requestedTableView" destination="4kT-I7-iwi" id="aaJ-hd-XpG"/>
+                <outlet property="switchController" destination="XkC-nE-jl5" id="oBx-DC-2zD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dark-brown-wood-bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nFf-9n-jv0">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="XkC-nE-jl5">
+                    <rect key="frame" x="10" y="72" width="301" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <segments>
+                        <segment title="Requested of You"/>
+                        <segment title="Requested"/>
+                    </segments>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </segmentedControl>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="82" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="nza-k2-8C9">
+                    <rect key="frame" x="0.0" y="112" width="320" height="407"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="riX-nH-hfz"/>
+                        <outlet property="delegate" destination="-1" id="NKg-n7-Uvk"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loading..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5La-M4-6fX">
+                    <rect key="frame" x="15" y="136" width="90" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="82" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="4kT-I7-iwi">
+                    <rect key="frame" x="0.0" y="112" width="320" height="407"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="xA3-08-AK5"/>
+                        <outlet property="delegate" destination="-1" id="jo4-lH-ffy"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="nza-k2-8C9" secondAttribute="trailing" id="1It-0f-ecP"/>
+                <constraint firstAttribute="bottom" secondItem="nFf-9n-jv0" secondAttribute="bottom" id="2OH-ZW-YWB"/>
+                <constraint firstAttribute="bottom" secondItem="4kT-I7-iwi" secondAttribute="bottom" constant="49" id="5ya-Pu-c5b"/>
+                <constraint firstItem="4kT-I7-iwi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="112" id="DnW-kE-Z25"/>
+                <constraint firstItem="nza-k2-8C9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="M9V-k4-tOD"/>
+                <constraint firstItem="nFf-9n-jv0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PPi-zt-jMW"/>
+                <constraint firstItem="4kT-I7-iwi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fC7-jD-w8D"/>
+                <constraint firstAttribute="bottom" secondItem="nza-k2-8C9" secondAttribute="bottom" constant="49" id="lUf-mh-478"/>
+                <constraint firstItem="nFf-9n-jv0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="nbk-L1-LDX"/>
+                <constraint firstAttribute="trailing" secondItem="nFf-9n-jv0" secondAttribute="trailing" id="qPb-EU-Tov"/>
+                <constraint firstAttribute="trailing" secondItem="4kT-I7-iwi" secondAttribute="trailing" id="y24-58-r47"/>
+                <constraint firstItem="nza-k2-8C9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="112" id="zIi-Ee-Umf"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dark-brown-wood-bg.jpg" width="1600" height="1000"/>
+    </resources>
+</document>

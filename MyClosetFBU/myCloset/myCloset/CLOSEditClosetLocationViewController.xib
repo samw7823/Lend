@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CLOSEditClosetLocationViewController">
+            <connections>
+                <outlet property="changeLocationButton" destination="7Ua-sv-f1L" id="iRj-D4-4b8"/>
+                <outlet property="collectionView" destination="X7y-lK-5rT" id="sfa-64-XFf"/>
+                <outlet property="deselectAllButton" destination="OP5-TF-r5Q" id="VAn-mb-rII"/>
+                <outlet property="selectAllButton" destination="HbE-pT-GLp" id="m6Y-gz-F8W"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dark-brown-wood-bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="PjN-yj-qBO">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="X7y-lK-5rT">
+                    <rect key="frame" x="0.0" y="132" width="320" height="386"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Oe8-I6-VpY">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <cells/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="EEe-fA-wFa"/>
+                        <outlet property="delegate" destination="-1" id="xzS-93-YAZ"/>
+                    </connections>
+                </collectionView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose closets to change the location of..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Icb-tz-eqj">
+                    <rect key="frame" x="5" y="62" width="310" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HbE-pT-GLp">
+                    <rect key="frame" x="5" y="96" width="64" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.32689895070000002" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Select All">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="selectAllAction:" destination="-1" eventType="touchUpInside" id="hAb-FH-mnK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OP5-TF-r5Q">
+                    <rect key="frame" x="87" y="96" width="81" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.32689895070000002" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Deselect All">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="deselectAll:" destination="-1" eventType="touchUpInside" id="E0Z-LP-dBT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ua-sv-f1L">
+                    <rect key="frame" x="183" y="96" width="137" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.32689895070000002" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Change Location">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="changeLocation:" destination="-1" eventType="touchUpInside" id="fe4-ux-mmO"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="PjN-yj-qBO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="65j-q2-VkY"/>
+                <constraint firstAttribute="trailing" secondItem="PjN-yj-qBO" secondAttribute="trailing" id="7w5-b6-g0l"/>
+                <constraint firstItem="X7y-lK-5rT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="132" id="E9u-sD-kBp"/>
+                <constraint firstItem="PjN-yj-qBO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ZzS-NH-ncI"/>
+                <constraint firstAttribute="trailing" secondItem="X7y-lK-5rT" secondAttribute="trailing" id="tpd-Zk-evu"/>
+                <constraint firstItem="X7y-lK-5rT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uB6-1Z-VTl"/>
+                <constraint firstAttribute="bottom" secondItem="PjN-yj-qBO" secondAttribute="bottom" id="z2j-mz-8in"/>
+                <constraint firstAttribute="bottom" secondItem="X7y-lK-5rT" secondAttribute="bottom" constant="50" id="zby-x1-DbQ"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dark-brown-wood-bg.jpg" width="1600" height="1000"/>
+    </resources>
+</document>

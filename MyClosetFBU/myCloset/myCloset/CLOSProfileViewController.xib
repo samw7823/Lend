@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CLOSProfileViewController">
+            <connections>
+                <outlet property="addClosetTutorialButton" destination="IBd-20-F7X" id="ox9-o1-Eat"/>
+                <outlet property="arrowImageView" destination="m2J-sH-Liu" id="h2l-du-MmE"/>
+                <outlet property="collectionView" destination="D2z-Wz-gHC" id="A3M-tw-mIs"/>
+                <outlet property="hasNoPublicClosetsLabel" destination="KKW-Em-9eI" id="pyv-0L-O6u"/>
+                <outlet property="imageView" destination="gIT-vu-32t" id="uln-Ap-ULY"/>
+                <outlet property="isFollowingButton" destination="0mF-Qh-Pmh" id="5sB-qP-OwS"/>
+                <outlet property="pendingButton" destination="QcR-Oc-RPd" id="kaM-3u-DfF"/>
+                <outlet property="profileView" destination="q9a-YC-0x1" id="0yl-Jy-9Nk"/>
+                <outlet property="scrollView" destination="32W-5X-RWV" id="rOl-my-Adg"/>
+                <outlet property="seeFollowersButton" destination="TOi-NY-bUF" id="77Y-EA-SqP"/>
+                <outlet property="seeFollowingButton" destination="G0p-Od-UAg" id="WyL-aF-HSx"/>
+                <outlet property="toolbar" destination="S51-ah-62R" id="eZT-cf-szv"/>
+                <outlet property="unfollowButton" destination="nP2-wW-n4L" id="q63-Aw-jqx"/>
+                <outlet property="usernameLabel" destination="HLD-Ie-4Gi" id="fEM-ta-QBV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dark-brown-wood-bg.jpg" id="gIT-vu-32t">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TOi-NY-bUF">
+                    <rect key="frame" x="136" y="72" width="90" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.32841012773722628" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Followers">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="seeFollowers:" destination="-1" eventType="touchUpInside" id="coy-Rt-Z8j"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="G0p-Od-UAg">
+                    <rect key="frame" x="230" y="72" width="90" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.32841012773722628" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Following">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="seeFollowing:" destination="-1" eventType="touchUpInside" id="Cjl-3A-qHA"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nP2-wW-n4L">
+                    <rect key="frame" x="142" y="118" width="173" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.053290374087591241" green="0.4456261405109489" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="FOLLOWING">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="unfollow:" destination="-1" eventType="touchUpInside" id="XJV-BT-pgk"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0mF-Qh-Pmh">
+                    <rect key="frame" x="142" y="118" width="173" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.32886633211678834" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="FOLLOW">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="follow:" destination="-1" eventType="touchUpInside" id="ryr-nd-HxO"/>
+                    </connections>
+                </button>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" id="S51-ah-62R">
+                    <rect key="frame" x="0.0" y="165" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" white="0.32980725364963503" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <items>
+                        <barButtonItem title="See Map" id="9Sx-HG-fdn">
+                            <connections>
+                                <action selector="seeMap:" destination="-1" id="iM7-Vy-K2G"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="|" id="UgB-2b-NmI"/>
+                        <barButtonItem title="Closets Nearby" id="4fq-I5-9KP">
+                            <connections>
+                                <action selector="closetsNearby:" destination="-1" id="gTE-B7-QKz"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="|" id="HL2-GL-0Rb"/>
+                        <barButtonItem title="Add Closet" id="lIM-n2-mAt">
+                            <connections>
+                                <action selector="addCloset:" destination="-1" id="EfF-op-yh9"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                    <color key="barTintColor" white="0.66666666666666663" alpha="0.0" colorSpace="calibratedWhite"/>
+                </toolbar>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="m2J-sH-Liu">
+                    <rect key="frame" x="172" y="181" width="70" height="99"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="q9a-YC-0x1">
+                    <rect key="frame" x="20" y="72" width="70" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="      " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HLD-Ie-4Gi">
+                    <rect key="frame" x="20" y="141" width="70" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="15"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QcR-Oc-RPd">
+                    <rect key="frame" x="142" y="118" width="173" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.69280020919999996" green="0.29074836430000001" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="20"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="PENDING">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pending:" destination="-1" eventType="touchUpInside" id="EPO-ph-vHT"/>
+                    </connections>
+                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" id="32W-5X-RWV">
+                    <rect key="frame" x="0.0" y="209" width="320" height="310"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="this user has no public closets" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KKW-Em-9eI">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="310"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="none" id="D2z-Wz-gHC">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="310"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" white="0.33333333329999998" alpha="0.5" colorSpace="calibratedWhite"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZBc-68-IlL">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <cells/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="kJC-aK-Auy"/>
+                                <outlet property="delegate" destination="-1" id="5Ln-1R-PEM"/>
+                            </connections>
+                        </collectionView>
+                    </subviews>
+                </scrollView>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IBd-20-F7X">
+                    <rect key="frame" x="111" y="201" width="209" height="135"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="0.70000000000000007" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="21"/>
+                    <state key="normal" title="AddClosetTutorial"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dark-brown-wood-bg.jpg" width="1600" height="1000"/>
+    </resources>
+</document>

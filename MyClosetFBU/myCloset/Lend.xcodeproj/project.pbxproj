@@ -1,0 +1,1108 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1342707519881DF100994451 /* PICA.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1342707419881DF100994451 /* PICA.jpg */; };
+		13801B6D19749C6B00B2369A /* CLOSSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13801B6A19749C6B00B2369A /* CLOSSearchViewController.m */; };
+		13801B6E19749C6B00B2369A /* CLOSSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13801B6B19749C6B00B2369A /* CLOSSearchViewController.xib */; };
+		138A7C5C196F09FB008AD0E9 /* CLOSloginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 138A7C5A196F09FB008AD0E9 /* CLOSloginViewController.m */; };
+		138A7C5D196F09FB008AD0E9 /* CLOSloginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 138A7C5B196F09FB008AD0E9 /* CLOSloginViewController.xib */; };
+		138A7C66196F0AE5008AD0E9 /* CLOSProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 138A7C64196F0AE5008AD0E9 /* CLOSProfileViewController.m */; };
+		138A7C67196F0AE5008AD0E9 /* CLOSProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 138A7C65196F0AE5008AD0E9 /* CLOSProfileViewController.xib */; };
+		138A7C6F196F0B4F008AD0E9 /* CLOSCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 138A7C6E196F0B4F008AD0E9 /* CLOSCameraViewController.m */; };
+		138A7C73196F0B5A008AD0E9 /* CLOSInventoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 138A7C71196F0B5A008AD0E9 /* CLOSInventoryViewController.m */; };
+		138A7C74196F0B5A008AD0E9 /* CLOSInventoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 138A7C72196F0B5A008AD0E9 /* CLOSInventoryViewController.xib */; };
+		138A7C78196F0B7B008AD0E9 /* CLOSIndividualClosetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 138A7C76196F0B7B008AD0E9 /* CLOSIndividualClosetViewController.m */; };
+		138A7C79196F0B7B008AD0E9 /* CLOSIndividualClosetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 138A7C77196F0B7B008AD0E9 /* CLOSIndividualClosetViewController.xib */; };
+		138A7C7D196F0B98008AD0E9 /* CLOSItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 138A7C7B196F0B98008AD0E9 /* CLOSItemViewController.m */; };
+		138A7C7E196F0B98008AD0E9 /* CLOSItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 138A7C7C196F0B98008AD0E9 /* CLOSItemViewController.xib */; };
+		138A7C82196F0BA5008AD0E9 /* CLOSBorrowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 138A7C80196F0BA5008AD0E9 /* CLOSBorrowViewController.m */; };
+		138A7C83196F0BA5008AD0E9 /* CLOSBorrowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 138A7C81196F0BA5008AD0E9 /* CLOSBorrowViewController.xib */; };
+		138A7C87196F0BB4008AD0E9 /* CLOSCreateClosetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 138A7C85196F0BB4008AD0E9 /* CLOSCreateClosetViewController.m */; };
+		138A7C88196F0BB4008AD0E9 /* CLOSCreateClosetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 138A7C86196F0BB4008AD0E9 /* CLOSCreateClosetViewController.xib */; };
+		138A7C8C196F0BBE008AD0E9 /* CLOSCreateItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 138A7C8A196F0BBE008AD0E9 /* CLOSCreateItemViewController.m */; };
+		138A7C8D196F0BBE008AD0E9 /* CLOSCreateItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 138A7C8B196F0BBE008AD0E9 /* CLOSCreateItemViewController.xib */; };
+		138A7C90196F2669008AD0E9 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 138A7C8E196F2669008AD0E9 /* Accounts.framework */; };
+		138A7C91196F2669008AD0E9 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 138A7C8F196F2669008AD0E9 /* Social.framework */; };
+		13A62CC1199AB60600CD3018 /* newsfeedTab2.png in Resources */ = {isa = PBXBuildFile; fileRef = 13A62CC0199AB60600CD3018 /* newsfeedTab2.png */; };
+		13A62CC3199AB90F00CD3018 /* cameraTab2.png in Resources */ = {isa = PBXBuildFile; fileRef = 13A62CC2199AB90F00CD3018 /* cameraTab2.png */; };
+		13A62CC5199ABAE200CD3018 /* inventoryTab2.png in Resources */ = {isa = PBXBuildFile; fileRef = 13A62CC4199ABAE200CD3018 /* inventoryTab2.png */; };
+		13A62CC7199AC1DA00CD3018 /* newsfeedTab2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13A62CC6199AC1DA00CD3018 /* newsfeedTab2@2x.png */; };
+		13A62CC9199AC2D500CD3018 /* cameraTab2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13A62CC8199AC2D500CD3018 /* cameraTab2@2x.png */; };
+		13A62CCB199AC46A00CD3018 /* inventoryTab2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13A62CCA199AC46A00CD3018 /* inventoryTab2@2x.png */; };
+		13A62CCD199AC5F500CD3018 /* profileTab2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13A62CCC199AC5F500CD3018 /* profileTab2@2x.png */; };
+		13A62CCF199AC6A600CD3018 /* profileTab2.png in Resources */ = {isa = PBXBuildFile; fileRef = 13A62CCE199AC6A600CD3018 /* profileTab2.png */; };
+		13AAEC7A1986B9350035F885 /* fb_icon_325x325.png in Resources */ = {isa = PBXBuildFile; fileRef = 13AAEC791986B9350035F885 /* fb_icon_325x325.png */; };
+		13CCD74F199A80050051EF38 /* kml_Heart copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 13CCD74D199A80050051EF38 /* kml_Heart copy.png */; };
+		13CCD750199A80050051EF38 /* kml_Heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 13CCD74E199A80050051EF38 /* kml_Heart.png */; };
+		13CCD75D199A843B0051EF38 /* CLOSNewsFeedHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CCD75C199A843B0051EF38 /* CLOSNewsFeedHeaderView.m */; };
+		13FCDBBE1975B20E00968863 /* CLOSSearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13FCDBBC1975B20E00968863 /* CLOSSearchTableViewCell.m */; };
+		13FCDBBF1975B20E00968863 /* CLOSSearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13FCDBBD1975B20E00968863 /* CLOSSearchTableViewCell.xib */; };
+		BF1571871970497500069252 /* CLOSAddItemToClosetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1571851970497500069252 /* CLOSAddItemToClosetViewController.m */; };
+		BF1571881970497500069252 /* CLOSAddItemToClosetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF1571861970497500069252 /* CLOSAddItemToClosetViewController.xib */; };
+		BF2928A81982D42B0037385D /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2928A71982D42B0037385D /* FacebookSDK.framework */; };
+		BF2928AC1982D8D60037385D /* CLOSSettingsFindFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2928AA1982D8D60037385D /* CLOSSettingsFindFriendsViewController.m */; };
+		BF2928AD1982D8D60037385D /* CLOSSettingsFindFriendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF2928AB1982D8D60037385D /* CLOSSettingsFindFriendsViewController.xib */; };
+		BF346A7C199924DB00BC809F /* inventoryIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF346A7B199924DB00BC809F /* inventoryIcon.png */; };
+		BF346A7E199924E400BC809F /* homeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF346A7D199924E400BC809F /* homeIcon.png */; };
+		BF346A80199924EE00BC809F /* photoIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF346A7F199924EE00BC809F /* photoIcon.png */; };
+		BF346A82199924F700BC809F /* profileIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF346A81199924F700BC809F /* profileIcon.png */; };
+		BF4663A6199ACEF7009FA35E /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4663A5199ACEF7009FA35E /* EventKit.framework */; };
+		BF484FC61990665C00EE7482 /* CLOSLikesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF484FC41990665C00EE7482 /* CLOSLikesViewController.m */; };
+		BF484FC71990665C00EE7482 /* CLOSLikesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF484FC51990665C00EE7482 /* CLOSLikesViewController.xib */; };
+		BF65FBE0198AEFC700D18C25 /* timeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF65FBDF198AEFC700D18C25 /* timeIcon.png */; };
+		BF6C067219771BEE00EF3E5A /* CLOSInventoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6C067019771BEE00EF3E5A /* CLOSInventoryTableViewCell.m */; };
+		BF6C067319771BEE00EF3E5A /* CLOSInventoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF6C067119771BEE00EF3E5A /* CLOSInventoryTableViewCell.xib */; };
+		BF7885EC1978731F0088936C /* CLOSTransactionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7885EA1978731F0088936C /* CLOSTransactionViewController.m */; };
+		BF7885ED1978731F0088936C /* CLOSTransactionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF7885EB1978731F0088936C /* CLOSTransactionViewController.xib */; };
+		BF939ECF196F364300BBEC72 /* CLOSClosetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF939ECE196F364300BBEC72 /* CLOSClosetCell.m */; };
+		BF939ED3196F3B7C00BBEC72 /* CLOSClosetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF939ED2196F3B7C00BBEC72 /* CLOSClosetCell.xib */; };
+		BF9E217C198FFC0700A83734 /* CLOSMapPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9E217A198FFC0700A83734 /* CLOSMapPopoverViewController.m */; };
+		BF9E217D198FFC0700A83734 /* CLOSMapPopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF9E217B198FFC0700A83734 /* CLOSMapPopoverViewController.xib */; };
+		BFA1C398199960BE0028B596 /* cameraTab.png in Resources */ = {isa = PBXBuildFile; fileRef = BFA1C397199960BE0028B596 /* cameraTab.png */; };
+		BFA1C39A199960CD0028B596 /* inventoryTab.png in Resources */ = {isa = PBXBuildFile; fileRef = BFA1C399199960CD0028B596 /* inventoryTab.png */; };
+		BFA1C39C199960D20028B596 /* profileTab.png in Resources */ = {isa = PBXBuildFile; fileRef = BFA1C39B199960D20028B596 /* profileTab.png */; };
+		BFA1C39E199960D90028B596 /* newsfeedTab.png in Resources */ = {isa = PBXBuildFile; fileRef = BFA1C39D199960D90028B596 /* newsfeedTab.png */; };
+		BFADF5111981AAB8004B856C /* CLOSSignUpDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFADF50F1981AAB8004B856C /* CLOSSignUpDetailViewController.m */; };
+		BFADF5121981AAB8004B856C /* CLOSSignUpDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFADF5101981AAB8004B856C /* CLOSSignUpDetailViewController.xib */; };
+		BFFCD04919872C460025455A /* CLOSNewsFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFCD04719872C460025455A /* CLOSNewsFeedViewController.m */; };
+		BFFCD04A19872C460025455A /* CLOSNewsFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFFCD04819872C460025455A /* CLOSNewsFeedViewController.xib */; };
+		BFFCD04E1988624F0025455A /* CLOSNewsFeedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFCD04C1988624F0025455A /* CLOSNewsFeedTableViewCell.m */; };
+		BFFCD04F1988624F0025455A /* CLOSNewsFeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFFCD04D1988624F0025455A /* CLOSNewsFeedTableViewCell.xib */; };
+		EA0DB6201992D46600CA3D79 /* CLOSReportAUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0DB61F1992D46600CA3D79 /* CLOSReportAUserView.m */; };
+		EA0DB6231992D74F00CA3D79 /* CLOSReportAUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0DB6221992D74F00CA3D79 /* CLOSReportAUserViewController.m */; };
+		EA0DB6261993249800CA3D79 /* CLOSGroupListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0DB6251993249800CA3D79 /* CLOSGroupListTableViewController.m */; };
+		EA0DB62A1993256F00CA3D79 /* CLOSGroupProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0DB6281993256F00CA3D79 /* CLOSGroupProfileViewController.m */; };
+		EA0DB62B1993256F00CA3D79 /* CLOSGroupProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA0DB6291993256F00CA3D79 /* CLOSGroupProfileViewController.xib */; };
+		EA0DB62F1993257C00CA3D79 /* CLOSGroupSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0DB62D1993257C00CA3D79 /* CLOSGroupSearchViewController.m */; };
+		EA0DB6301993257C00CA3D79 /* CLOSGroupSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA0DB62E1993257C00CA3D79 /* CLOSGroupSearchViewController.xib */; };
+		EA0DB63419932BAF00CA3D79 /* CLOSAddMemberToGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0DB63219932BAF00CA3D79 /* CLOSAddMemberToGroupViewController.m */; };
+		EA0DB63519932BAF00CA3D79 /* CLOSAddMemberToGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA0DB63319932BAF00CA3D79 /* CLOSAddMemberToGroupViewController.xib */; };
+		EA0DB639199332B800CA3D79 /* CLOSCreateGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0DB637199332B800CA3D79 /* CLOSCreateGroupViewController.m */; };
+		EA0DB63A199332B800CA3D79 /* CLOSCreateGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA0DB638199332B800CA3D79 /* CLOSCreateGroupViewController.xib */; };
+		EA0E072C197D9253002327E0 /* CLOSSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0E072A197D9253002327E0 /* CLOSSettingsViewController.m */; };
+		EA0E072D197D9253002327E0 /* CLOSSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA0E072B197D9253002327E0 /* CLOSSettingsViewController.xib */; };
+		EA0E0731197DAC70002327E0 /* CLOSItemsYouveBorrowedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0E072F197DAC70002327E0 /* CLOSItemsYouveBorrowedViewController.m */; };
+		EA0E0732197DAC70002327E0 /* CLOSItemsYouveBorrowedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA0E0730197DAC70002327E0 /* CLOSItemsYouveBorrowedViewController.xib */; };
+		EA29026219901067009B7E96 /* CLOSPendingFollowRequestsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA29026119901067009B7E96 /* CLOSPendingFollowRequestsTableViewCell.m */; };
+		EA29026419901408009B7E96 /* CLOSPendingFollowRequestsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA29026319901408009B7E96 /* CLOSPendingFollowRequestsTableViewCell.xib */; };
+		EA32E0CE197ECCD2009219D0 /* CLOSPrivacySettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA32E0CC197ECCD2009219D0 /* CLOSPrivacySettingsViewController.m */; };
+		EA32E0CF197ECCD2009219D0 /* CLOSPrivacySettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA32E0CD197ECCD2009219D0 /* CLOSPrivacySettingsViewController.xib */; };
+		EA3D0BA0198FFFEC00CCBB50 /* CLOSPendingFollowRequestsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3D0B9E198FFFEC00CCBB50 /* CLOSPendingFollowRequestsTableViewController.m */; };
+		EA43B451198B07A200CAFAE9 /* powered-by-google-on-non-white.png in Resources */ = {isa = PBXBuildFile; fileRef = EA43B450198B07A200CAFAE9 /* powered-by-google-on-non-white.png */; };
+		EA43B453198B07B000CAFAE9 /* powered-by-google-on-non-white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA43B452198B07B000CAFAE9 /* powered-by-google-on-non-white@2x.png */; };
+		EA43B455198B102400CAFAE9 /* CLOSLocationSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA43B454198B102400CAFAE9 /* CLOSLocationSearchView.xib */; };
+		EA43B459198C231D00CAFAE9 /* CLOSReportAProblemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA43B457198C231D00CAFAE9 /* CLOSReportAProblemViewController.m */; };
+		EA43B45A198C231D00CAFAE9 /* CLOSReportAProblemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA43B458198C231D00CAFAE9 /* CLOSReportAProblemViewController.xib */; };
+		EA4484A6197F1A150038ECC8 /* dark-brown-wood-bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA4484A4197F1A150038ECC8 /* dark-brown-wood-bg.jpg */; };
+		EA56AD3219807DB000FD4F80 /* default-user-icon-profile.png in Resources */ = {isa = PBXBuildFile; fileRef = EA56AD3119807DB000FD4F80 /* default-user-icon-profile.png */; };
+		EA72E2A7198C469B00303ED4 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA72E2A6198C469B00303ED4 /* MessageUI.framework */; };
+		EAA551B519998ED900BE8B1F /* CLOSScreenshotsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA551B319998ED900BE8B1F /* CLOSScreenshotsViewController.m */; };
+		EAA551B619998ED900BE8B1F /* CLOSScreenshotsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAA551B419998ED900BE8B1F /* CLOSScreenshotsViewController.xib */; };
+		EABCC5721986DEA100DDE84A /* CLOSEditClosetLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EABCC5701986DEA100DDE84A /* CLOSEditClosetLocationViewController.m */; };
+		EABCC5731986DEA100DDE84A /* CLOSEditClosetLocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EABCC5711986DEA100DDE84A /* CLOSEditClosetLocationViewController.xib */; };
+		EAC0B323196F04DA004E310D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC0B322196F04DA004E310D /* Foundation.framework */; };
+		EAC0B325196F04DA004E310D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC0B324196F04DA004E310D /* CoreGraphics.framework */; };
+		EAC0B327196F04DA004E310D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC0B326196F04DA004E310D /* UIKit.framework */; };
+		EAC0B32D196F04DA004E310D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAC0B32B196F04DA004E310D /* InfoPlist.strings */; };
+		EAC0B32F196F04DA004E310D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC0B32E196F04DA004E310D /* main.m */; };
+		EAC0B333196F04DA004E310D /* CLOSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC0B332196F04DA004E310D /* CLOSAppDelegate.m */; };
+		EAC0B335196F04DA004E310D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAC0B334196F04DA004E310D /* Images.xcassets */; };
+		EAC0B33C196F04DA004E310D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC0B33B196F04DA004E310D /* XCTest.framework */; };
+		EAC0B33D196F04DA004E310D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC0B322196F04DA004E310D /* Foundation.framework */; };
+		EAC0B33E196F04DA004E310D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC0B326196F04DA004E310D /* UIKit.framework */; };
+		EAC0B346196F04DA004E310D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAC0B344196F04DA004E310D /* InfoPlist.strings */; };
+		EAC0B348196F04DA004E310D /* myClosetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC0B347196F04DA004E310D /* myClosetTests.m */; };
+		EAC0B352196F0512004E310D /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC0B351196F0512004E310D /* Parse.framework */; };
+		EAC0B35C196F0575004E310D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC0B353196F0575004E310D /* AudioToolbox.framework */; };
+		EAC0B35D196F0575004E310D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC0B354196F0575004E310D /* CFNetwork.framework */; };
+		EAC0B35E196F0575004E310D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC0B355196F0575004E310D /* CoreLocation.framework */; };
+		EAC0B35F196F0575004E310D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC0B356196F0575004E310D /* libz.dylib */; };
+		EAC0B360196F0575004E310D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC0B357196F0575004E310D /* MobileCoreServices.framework */; };
+		EAC0B361196F0575004E310D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC0B358196F0575004E310D /* QuartzCore.framework */; };
+		EAC0B362196F0575004E310D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC0B359196F0575004E310D /* Security.framework */; };
+		EAC0B363196F0575004E310D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC0B35A196F0575004E310D /* StoreKit.framework */; };
+		EAC0B364196F0575004E310D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC0B35B196F0575004E310D /* SystemConfiguration.framework */; };
+		EAC6024A1982DEF700C5E5F1 /* CLOSMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC602481982DEF700C5E5F1 /* CLOSMapViewController.m */; };
+		EAC6024B1982DEF700C5E5F1 /* CLOSMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAC602491982DEF700C5E5F1 /* CLOSMapViewController.xib */; };
+		EAC6024D1982E0A600C5E5F1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC6024C1982E0A600C5E5F1 /* MapKit.framework */; };
+		EACCF3AB1999A57600828088 /* image[0].png in Resources */ = {isa = PBXBuildFile; fileRef = EACCF3A41999A57600828088 /* image[0].png */; };
+		EACCF3AC1999A57600828088 /* image[1].png in Resources */ = {isa = PBXBuildFile; fileRef = EACCF3A51999A57600828088 /* image[1].png */; };
+		EACCF3AD1999A57600828088 /* image[2].png in Resources */ = {isa = PBXBuildFile; fileRef = EACCF3A61999A57600828088 /* image[2].png */; };
+		EACCF3AE1999A57600828088 /* image[3].png in Resources */ = {isa = PBXBuildFile; fileRef = EACCF3A71999A57600828088 /* image[3].png */; };
+		EACCF3AF1999A57600828088 /* image[4].png in Resources */ = {isa = PBXBuildFile; fileRef = EACCF3A81999A57600828088 /* image[4].png */; };
+		EACCF3B01999A57600828088 /* image[5].png in Resources */ = {isa = PBXBuildFile; fileRef = EACCF3A91999A57600828088 /* image[5].png */; };
+		EACCF3B11999A57600828088 /* image[6].png in Resources */ = {isa = PBXBuildFile; fileRef = EACCF3AA1999A57600828088 /* image[6].png */; };
+		EAE989531994479500A358E4 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE989521994479500A358E4 /* Reachability.m */; };
+		EAEB45A519830C4F004AFFB8 /* CLOSClosetsAtPlacemarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEB45A319830C4F004AFFB8 /* CLOSClosetsAtPlacemarkViewController.m */; };
+		EAEB45A619830C4F004AFFB8 /* CLOSClosetsAtPlacemarkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAEB45A419830C4F004AFFB8 /* CLOSClosetsAtPlacemarkViewController.xib */; };
+		EAF3E6B319749B0900183732 /* CLOSFriendListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF3E6B119749B0900183732 /* CLOSFriendListViewController.m */; };
+		EAF3E6B419749B0900183732 /* CLOSFriendListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAF3E6B219749B0900183732 /* CLOSFriendListViewController.xib */; };
+		EAF90F2D199BD7B000372BB7 /* closetDoor[0].jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAF90F27199BD7B000372BB7 /* closetDoor[0].jpg */; };
+		EAF90F30199BD7B000372BB7 /* closetDoor[3].jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAF90F2A199BD7B000372BB7 /* closetDoor[3].jpg */; };
+		EAF90F32199BD7B000372BB7 /* closetDoor[5].jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAF90F2C199BD7B000372BB7 /* closetDoor[5].jpg */; };
+		EAF90F34199BDF4C00372BB7 /* closetDoor[4].jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAF90F33199BDF4C00372BB7 /* closetDoor[4].jpg */; };
+		EAF90F39199BE5D800372BB7 /* closetDoor[1].jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAF90F37199BE5D800372BB7 /* closetDoor[1].jpg */; };
+		EAF90F3A199BE5D800372BB7 /* closetDoor[2].jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAF90F38199BE5D800372BB7 /* closetDoor[2].jpg */; };
+		EAF90F46199BEE6800372BB7 /* CLOSGeneralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF90F44199BEE6800372BB7 /* CLOSGeneralViewController.m */; };
+		EAF90F47199BEE6800372BB7 /* CLOSGeneralViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAF90F45199BEE6800372BB7 /* CLOSGeneralViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAC0B33F196F04DA004E310D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAC0B317196F04DA004E310D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAC0B31E196F04DA004E310D;
+			remoteInfo = myCloset;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1342707419881DF100994451 /* PICA.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PICA.jpg; sourceTree = "<group>"; };
+		13801B6A19749C6B00B2369A /* CLOSSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSSearchViewController.m; sourceTree = "<group>"; };
+		13801B6B19749C6B00B2369A /* CLOSSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSSearchViewController.xib; sourceTree = "<group>"; };
+		138A7C59196F09FB008AD0E9 /* CLOSloginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSloginViewController.h; sourceTree = "<group>"; };
+		138A7C5A196F09FB008AD0E9 /* CLOSloginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSloginViewController.m; sourceTree = "<group>"; };
+		138A7C5B196F09FB008AD0E9 /* CLOSloginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSloginViewController.xib; sourceTree = "<group>"; };
+		138A7C63196F0AE5008AD0E9 /* CLOSProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSProfileViewController.h; sourceTree = "<group>"; };
+		138A7C64196F0AE5008AD0E9 /* CLOSProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSProfileViewController.m; sourceTree = "<group>"; };
+		138A7C65196F0AE5008AD0E9 /* CLOSProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSProfileViewController.xib; sourceTree = "<group>"; };
+		138A7C68196F0B01008AD0E9 /* CLOSSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSSearchViewController.h; sourceTree = "<group>"; };
+		138A7C6D196F0B4F008AD0E9 /* CLOSCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSCameraViewController.h; sourceTree = "<group>"; };
+		138A7C6E196F0B4F008AD0E9 /* CLOSCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSCameraViewController.m; sourceTree = "<group>"; };
+		138A7C70196F0B5A008AD0E9 /* CLOSInventoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSInventoryViewController.h; sourceTree = "<group>"; };
+		138A7C71196F0B5A008AD0E9 /* CLOSInventoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSInventoryViewController.m; sourceTree = "<group>"; };
+		138A7C72196F0B5A008AD0E9 /* CLOSInventoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSInventoryViewController.xib; sourceTree = "<group>"; };
+		138A7C75196F0B7B008AD0E9 /* CLOSIndividualClosetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSIndividualClosetViewController.h; sourceTree = "<group>"; };
+		138A7C76196F0B7B008AD0E9 /* CLOSIndividualClosetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSIndividualClosetViewController.m; sourceTree = "<group>"; };
+		138A7C77196F0B7B008AD0E9 /* CLOSIndividualClosetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSIndividualClosetViewController.xib; sourceTree = "<group>"; };
+		138A7C7A196F0B98008AD0E9 /* CLOSItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSItemViewController.h; sourceTree = "<group>"; };
+		138A7C7B196F0B98008AD0E9 /* CLOSItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSItemViewController.m; sourceTree = "<group>"; };
+		138A7C7C196F0B98008AD0E9 /* CLOSItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSItemViewController.xib; sourceTree = "<group>"; };
+		138A7C7F196F0BA5008AD0E9 /* CLOSBorrowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSBorrowViewController.h; sourceTree = "<group>"; };
+		138A7C80196F0BA5008AD0E9 /* CLOSBorrowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSBorrowViewController.m; sourceTree = "<group>"; };
+		138A7C81196F0BA5008AD0E9 /* CLOSBorrowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSBorrowViewController.xib; sourceTree = "<group>"; };
+		138A7C84196F0BB4008AD0E9 /* CLOSCreateClosetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSCreateClosetViewController.h; sourceTree = "<group>"; };
+		138A7C85196F0BB4008AD0E9 /* CLOSCreateClosetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSCreateClosetViewController.m; sourceTree = "<group>"; };
+		138A7C86196F0BB4008AD0E9 /* CLOSCreateClosetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSCreateClosetViewController.xib; sourceTree = "<group>"; };
+		138A7C89196F0BBE008AD0E9 /* CLOSCreateItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSCreateItemViewController.h; sourceTree = "<group>"; };
+		138A7C8A196F0BBE008AD0E9 /* CLOSCreateItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSCreateItemViewController.m; sourceTree = "<group>"; };
+		138A7C8B196F0BBE008AD0E9 /* CLOSCreateItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSCreateItemViewController.xib; sourceTree = "<group>"; };
+		138A7C8E196F2669008AD0E9 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		138A7C8F196F2669008AD0E9 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		13A62CC0199AB60600CD3018 /* newsfeedTab2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newsfeedTab2.png; sourceTree = "<group>"; };
+		13A62CC2199AB90F00CD3018 /* cameraTab2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraTab2.png; sourceTree = "<group>"; };
+		13A62CC4199ABAE200CD3018 /* inventoryTab2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inventoryTab2.png; sourceTree = "<group>"; };
+		13A62CC6199AC1DA00CD3018 /* newsfeedTab2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "newsfeedTab2@2x.png"; sourceTree = "<group>"; };
+		13A62CC8199AC2D500CD3018 /* cameraTab2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraTab2@2x.png"; sourceTree = "<group>"; };
+		13A62CCA199AC46A00CD3018 /* inventoryTab2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inventoryTab2@2x.png"; sourceTree = "<group>"; };
+		13A62CCC199AC5F500CD3018 /* profileTab2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profileTab2@2x.png"; sourceTree = "<group>"; };
+		13A62CCE199AC6A600CD3018 /* profileTab2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profileTab2.png; sourceTree = "<group>"; };
+		13AAEC791986B9350035F885 /* fb_icon_325x325.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fb_icon_325x325.png; sourceTree = "<group>"; };
+		13CCD74D199A80050051EF38 /* kml_Heart copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kml_Heart copy.png"; sourceTree = "<group>"; };
+		13CCD74E199A80050051EF38 /* kml_Heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kml_Heart.png; sourceTree = "<group>"; };
+		13CCD75B199A843B0051EF38 /* CLOSNewsFeedHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLOSNewsFeedHeaderView.h; path = ../CLOSNewsFeedHeaderView.h; sourceTree = "<group>"; };
+		13CCD75C199A843B0051EF38 /* CLOSNewsFeedHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLOSNewsFeedHeaderView.m; path = ../CLOSNewsFeedHeaderView.m; sourceTree = "<group>"; };
+		13FCDBBB1975B20E00968863 /* CLOSSearchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSSearchTableViewCell.h; sourceTree = "<group>"; };
+		13FCDBBC1975B20E00968863 /* CLOSSearchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSSearchTableViewCell.m; sourceTree = "<group>"; };
+		13FCDBBD1975B20E00968863 /* CLOSSearchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSSearchTableViewCell.xib; sourceTree = "<group>"; };
+		BF1571841970497500069252 /* CLOSAddItemToClosetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSAddItemToClosetViewController.h; sourceTree = "<group>"; };
+		BF1571851970497500069252 /* CLOSAddItemToClosetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSAddItemToClosetViewController.m; sourceTree = "<group>"; };
+		BF1571861970497500069252 /* CLOSAddItemToClosetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSAddItemToClosetViewController.xib; sourceTree = "<group>"; };
+		BF2928A71982D42B0037385D /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		BF2928A91982D8D60037385D /* CLOSSettingsFindFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSSettingsFindFriendsViewController.h; sourceTree = "<group>"; };
+		BF2928AA1982D8D60037385D /* CLOSSettingsFindFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSSettingsFindFriendsViewController.m; sourceTree = "<group>"; };
+		BF2928AB1982D8D60037385D /* CLOSSettingsFindFriendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSSettingsFindFriendsViewController.xib; sourceTree = "<group>"; };
+		BF346A7B199924DB00BC809F /* inventoryIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inventoryIcon.png; sourceTree = "<group>"; };
+		BF346A7D199924E400BC809F /* homeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeIcon.png; sourceTree = "<group>"; };
+		BF346A7F199924EE00BC809F /* photoIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photoIcon.png; sourceTree = "<group>"; };
+		BF346A81199924F700BC809F /* profileIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profileIcon.png; sourceTree = "<group>"; };
+		BF4663A5199ACEF7009FA35E /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		BF484FC31990665C00EE7482 /* CLOSLikesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSLikesViewController.h; sourceTree = "<group>"; };
+		BF484FC41990665C00EE7482 /* CLOSLikesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSLikesViewController.m; sourceTree = "<group>"; };
+		BF484FC51990665C00EE7482 /* CLOSLikesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSLikesViewController.xib; sourceTree = "<group>"; };
+		BF65FBDF198AEFC700D18C25 /* timeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timeIcon.png; sourceTree = "<group>"; };
+		BF6C066F19771BEE00EF3E5A /* CLOSInventoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSInventoryTableViewCell.h; sourceTree = "<group>"; };
+		BF6C067019771BEE00EF3E5A /* CLOSInventoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSInventoryTableViewCell.m; sourceTree = "<group>"; };
+		BF6C067119771BEE00EF3E5A /* CLOSInventoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSInventoryTableViewCell.xib; sourceTree = "<group>"; };
+		BF7885E91978731F0088936C /* CLOSTransactionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSTransactionViewController.h; sourceTree = "<group>"; };
+		BF7885EA1978731F0088936C /* CLOSTransactionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSTransactionViewController.m; sourceTree = "<group>"; };
+		BF7885EB1978731F0088936C /* CLOSTransactionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSTransactionViewController.xib; sourceTree = "<group>"; };
+		BF939ECD196F364300BBEC72 /* CLOSClosetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLOSClosetCell.h; path = ../CLOSClosetCell.h; sourceTree = "<group>"; };
+		BF939ECE196F364300BBEC72 /* CLOSClosetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLOSClosetCell.m; path = ../CLOSClosetCell.m; sourceTree = "<group>"; };
+		BF939ED2196F3B7C00BBEC72 /* CLOSClosetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSClosetCell.xib; sourceTree = "<group>"; };
+		BF9E2179198FFC0700A83734 /* CLOSMapPopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSMapPopoverViewController.h; sourceTree = "<group>"; };
+		BF9E217A198FFC0700A83734 /* CLOSMapPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSMapPopoverViewController.m; sourceTree = "<group>"; };
+		BF9E217B198FFC0700A83734 /* CLOSMapPopoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSMapPopoverViewController.xib; sourceTree = "<group>"; };
+		BFA1C397199960BE0028B596 /* cameraTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraTab.png; sourceTree = "<group>"; };
+		BFA1C399199960CD0028B596 /* inventoryTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inventoryTab.png; sourceTree = "<group>"; };
+		BFA1C39B199960D20028B596 /* profileTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profileTab.png; sourceTree = "<group>"; };
+		BFA1C39D199960D90028B596 /* newsfeedTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newsfeedTab.png; sourceTree = "<group>"; };
+		BFADF50E1981AAB8004B856C /* CLOSSignUpDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSSignUpDetailViewController.h; sourceTree = "<group>"; };
+		BFADF50F1981AAB8004B856C /* CLOSSignUpDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSSignUpDetailViewController.m; sourceTree = "<group>"; };
+		BFADF5101981AAB8004B856C /* CLOSSignUpDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSSignUpDetailViewController.xib; sourceTree = "<group>"; };
+		BFFCD04619872C460025455A /* CLOSNewsFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSNewsFeedViewController.h; sourceTree = "<group>"; };
+		BFFCD04719872C460025455A /* CLOSNewsFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSNewsFeedViewController.m; sourceTree = "<group>"; };
+		BFFCD04819872C460025455A /* CLOSNewsFeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSNewsFeedViewController.xib; sourceTree = "<group>"; };
+		BFFCD04B1988624F0025455A /* CLOSNewsFeedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSNewsFeedTableViewCell.h; sourceTree = "<group>"; };
+		BFFCD04C1988624F0025455A /* CLOSNewsFeedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSNewsFeedTableViewCell.m; sourceTree = "<group>"; };
+		BFFCD04D1988624F0025455A /* CLOSNewsFeedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSNewsFeedTableViewCell.xib; sourceTree = "<group>"; };
+		EA0DB61E1992D46600CA3D79 /* CLOSReportAUserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSReportAUserView.h; sourceTree = "<group>"; };
+		EA0DB61F1992D46600CA3D79 /* CLOSReportAUserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSReportAUserView.m; sourceTree = "<group>"; };
+		EA0DB6211992D74E00CA3D79 /* CLOSReportAUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSReportAUserViewController.h; sourceTree = "<group>"; };
+		EA0DB6221992D74F00CA3D79 /* CLOSReportAUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSReportAUserViewController.m; sourceTree = "<group>"; };
+		EA0DB6241993249800CA3D79 /* CLOSGroupListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSGroupListTableViewController.h; sourceTree = "<group>"; };
+		EA0DB6251993249800CA3D79 /* CLOSGroupListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSGroupListTableViewController.m; sourceTree = "<group>"; };
+		EA0DB6271993256F00CA3D79 /* CLOSGroupProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSGroupProfileViewController.h; sourceTree = "<group>"; };
+		EA0DB6281993256F00CA3D79 /* CLOSGroupProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSGroupProfileViewController.m; sourceTree = "<group>"; };
+		EA0DB6291993256F00CA3D79 /* CLOSGroupProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSGroupProfileViewController.xib; sourceTree = "<group>"; };
+		EA0DB62C1993257C00CA3D79 /* CLOSGroupSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSGroupSearchViewController.h; sourceTree = "<group>"; };
+		EA0DB62D1993257C00CA3D79 /* CLOSGroupSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSGroupSearchViewController.m; sourceTree = "<group>"; };
+		EA0DB62E1993257C00CA3D79 /* CLOSGroupSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSGroupSearchViewController.xib; sourceTree = "<group>"; };
+		EA0DB63119932BAF00CA3D79 /* CLOSAddMemberToGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSAddMemberToGroupViewController.h; sourceTree = "<group>"; };
+		EA0DB63219932BAF00CA3D79 /* CLOSAddMemberToGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSAddMemberToGroupViewController.m; sourceTree = "<group>"; };
+		EA0DB63319932BAF00CA3D79 /* CLOSAddMemberToGroupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSAddMemberToGroupViewController.xib; sourceTree = "<group>"; };
+		EA0DB636199332B800CA3D79 /* CLOSCreateGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSCreateGroupViewController.h; sourceTree = "<group>"; };
+		EA0DB637199332B800CA3D79 /* CLOSCreateGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSCreateGroupViewController.m; sourceTree = "<group>"; };
+		EA0DB638199332B800CA3D79 /* CLOSCreateGroupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSCreateGroupViewController.xib; sourceTree = "<group>"; };
+		EA0E0729197D9253002327E0 /* CLOSSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSSettingsViewController.h; sourceTree = "<group>"; };
+		EA0E072A197D9253002327E0 /* CLOSSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSSettingsViewController.m; sourceTree = "<group>"; };
+		EA0E072B197D9253002327E0 /* CLOSSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSSettingsViewController.xib; sourceTree = "<group>"; };
+		EA0E072E197DAC70002327E0 /* CLOSItemsYouveBorrowedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLOSItemsYouveBorrowedViewController.h; path = ../CLOSItemsYouveBorrowedViewController.h; sourceTree = "<group>"; };
+		EA0E072F197DAC70002327E0 /* CLOSItemsYouveBorrowedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLOSItemsYouveBorrowedViewController.m; path = ../CLOSItemsYouveBorrowedViewController.m; sourceTree = "<group>"; };
+		EA0E0730197DAC70002327E0 /* CLOSItemsYouveBorrowedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CLOSItemsYouveBorrowedViewController.xib; path = ../CLOSItemsYouveBorrowedViewController.xib; sourceTree = "<group>"; };
+		EA29026019901067009B7E96 /* CLOSPendingFollowRequestsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSPendingFollowRequestsTableViewCell.h; sourceTree = "<group>"; };
+		EA29026119901067009B7E96 /* CLOSPendingFollowRequestsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSPendingFollowRequestsTableViewCell.m; sourceTree = "<group>"; };
+		EA29026319901408009B7E96 /* CLOSPendingFollowRequestsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CLOSPendingFollowRequestsTableViewCell.xib; path = ../CLOSPendingFollowRequestsTableViewCell.xib; sourceTree = "<group>"; };
+		EA32E0CB197ECCD2009219D0 /* CLOSPrivacySettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSPrivacySettingsViewController.h; sourceTree = "<group>"; };
+		EA32E0CC197ECCD2009219D0 /* CLOSPrivacySettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSPrivacySettingsViewController.m; sourceTree = "<group>"; };
+		EA32E0CD197ECCD2009219D0 /* CLOSPrivacySettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSPrivacySettingsViewController.xib; sourceTree = "<group>"; };
+		EA3D0B9D198FFFEC00CCBB50 /* CLOSPendingFollowRequestsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSPendingFollowRequestsTableViewController.h; sourceTree = "<group>"; };
+		EA3D0B9E198FFFEC00CCBB50 /* CLOSPendingFollowRequestsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSPendingFollowRequestsTableViewController.m; sourceTree = "<group>"; };
+		EA43B450198B07A200CAFAE9 /* powered-by-google-on-non-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "powered-by-google-on-non-white.png"; sourceTree = "<group>"; };
+		EA43B452198B07B000CAFAE9 /* powered-by-google-on-non-white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "powered-by-google-on-non-white@2x.png"; sourceTree = "<group>"; };
+		EA43B454198B102400CAFAE9 /* CLOSLocationSearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSLocationSearchView.xib; sourceTree = "<group>"; };
+		EA43B456198C231D00CAFAE9 /* CLOSReportAProblemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSReportAProblemViewController.h; sourceTree = "<group>"; };
+		EA43B457198C231D00CAFAE9 /* CLOSReportAProblemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSReportAProblemViewController.m; sourceTree = "<group>"; };
+		EA43B458198C231D00CAFAE9 /* CLOSReportAProblemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSReportAProblemViewController.xib; sourceTree = "<group>"; };
+		EA4484A4197F1A150038ECC8 /* dark-brown-wood-bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dark-brown-wood-bg.jpg"; sourceTree = "<group>"; };
+		EA56AD3119807DB000FD4F80 /* default-user-icon-profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-user-icon-profile.png"; sourceTree = "<group>"; };
+		EA72E2A6198C469B00303ED4 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		EAA551B219998ED900BE8B1F /* CLOSScreenshotsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSScreenshotsViewController.h; sourceTree = "<group>"; };
+		EAA551B319998ED900BE8B1F /* CLOSScreenshotsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSScreenshotsViewController.m; sourceTree = "<group>"; };
+		EAA551B419998ED900BE8B1F /* CLOSScreenshotsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSScreenshotsViewController.xib; sourceTree = "<group>"; };
+		EABCC56F1986DEA100DDE84A /* CLOSEditClosetLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSEditClosetLocationViewController.h; sourceTree = "<group>"; };
+		EABCC5701986DEA100DDE84A /* CLOSEditClosetLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSEditClosetLocationViewController.m; sourceTree = "<group>"; };
+		EABCC5711986DEA100DDE84A /* CLOSEditClosetLocationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSEditClosetLocationViewController.xib; sourceTree = "<group>"; };
+		EAC0B31F196F04DA004E310D /* Lend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lend.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAC0B322196F04DA004E310D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EAC0B324196F04DA004E310D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EAC0B326196F04DA004E310D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EAC0B32A196F04DA004E310D /* Lend-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Lend-Info.plist"; sourceTree = "<group>"; };
+		EAC0B32C196F04DA004E310D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EAC0B32E196F04DA004E310D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EAC0B330196F04DA004E310D /* Lend-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lend-Prefix.pch"; sourceTree = "<group>"; };
+		EAC0B331196F04DA004E310D /* CLOSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLOSAppDelegate.h; sourceTree = "<group>"; };
+		EAC0B332196F04DA004E310D /* CLOSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLOSAppDelegate.m; sourceTree = "<group>"; };
+		EAC0B334196F04DA004E310D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EAC0B33A196F04DA004E310D /* LendTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LendTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAC0B33B196F04DA004E310D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EAC0B343196F04DA004E310D /* LendTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LendTests-Info.plist"; sourceTree = "<group>"; };
+		EAC0B345196F04DA004E310D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EAC0B347196F04DA004E310D /* myClosetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myClosetTests.m; sourceTree = "<group>"; };
+		EAC0B351196F0512004E310D /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		EAC0B353196F0575004E310D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EAC0B354196F0575004E310D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		EAC0B355196F0575004E310D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EAC0B356196F0575004E310D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		EAC0B357196F0575004E310D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		EAC0B358196F0575004E310D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EAC0B359196F0575004E310D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		EAC0B35A196F0575004E310D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		EAC0B35B196F0575004E310D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EAC602471982DEF700C5E5F1 /* CLOSMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSMapViewController.h; sourceTree = "<group>"; };
+		EAC602481982DEF700C5E5F1 /* CLOSMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSMapViewController.m; sourceTree = "<group>"; };
+		EAC602491982DEF700C5E5F1 /* CLOSMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSMapViewController.xib; sourceTree = "<group>"; };
+		EAC6024C1982E0A600C5E5F1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EACCF3A41999A57600828088 /* image[0].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image[0].png"; sourceTree = "<group>"; };
+		EACCF3A51999A57600828088 /* image[1].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image[1].png"; sourceTree = "<group>"; };
+		EACCF3A61999A57600828088 /* image[2].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image[2].png"; sourceTree = "<group>"; };
+		EACCF3A71999A57600828088 /* image[3].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image[3].png"; sourceTree = "<group>"; };
+		EACCF3A81999A57600828088 /* image[4].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image[4].png"; sourceTree = "<group>"; };
+		EACCF3A91999A57600828088 /* image[5].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image[5].png"; sourceTree = "<group>"; };
+		EACCF3AA1999A57600828088 /* image[6].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image[6].png"; sourceTree = "<group>"; };
+		EAE989511994479500A358E4 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		EAE989521994479500A358E4 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		EAEB45A219830C4F004AFFB8 /* CLOSClosetsAtPlacemarkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLOSClosetsAtPlacemarkViewController.h; path = ../CLOSClosetsAtPlacemarkViewController.h; sourceTree = "<group>"; };
+		EAEB45A319830C4F004AFFB8 /* CLOSClosetsAtPlacemarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLOSClosetsAtPlacemarkViewController.m; path = ../CLOSClosetsAtPlacemarkViewController.m; sourceTree = "<group>"; };
+		EAEB45A419830C4F004AFFB8 /* CLOSClosetsAtPlacemarkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CLOSClosetsAtPlacemarkViewController.xib; path = ../CLOSClosetsAtPlacemarkViewController.xib; sourceTree = "<group>"; };
+		EAF3E6B019749B0900183732 /* CLOSFriendListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSFriendListViewController.h; sourceTree = "<group>"; };
+		EAF3E6B119749B0900183732 /* CLOSFriendListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSFriendListViewController.m; sourceTree = "<group>"; };
+		EAF3E6B219749B0900183732 /* CLOSFriendListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSFriendListViewController.xib; sourceTree = "<group>"; };
+		EAF90F27199BD7B000372BB7 /* closetDoor[0].jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "closetDoor[0].jpg"; sourceTree = "<group>"; };
+		EAF90F2A199BD7B000372BB7 /* closetDoor[3].jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "closetDoor[3].jpg"; sourceTree = "<group>"; };
+		EAF90F2C199BD7B000372BB7 /* closetDoor[5].jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "closetDoor[5].jpg"; sourceTree = "<group>"; };
+		EAF90F33199BDF4C00372BB7 /* closetDoor[4].jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "closetDoor[4].jpg"; sourceTree = "<group>"; };
+		EAF90F37199BE5D800372BB7 /* closetDoor[1].jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "closetDoor[1].jpg"; sourceTree = "<group>"; };
+		EAF90F38199BE5D800372BB7 /* closetDoor[2].jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "closetDoor[2].jpg"; sourceTree = "<group>"; };
+		EAF90F43199BEE6800372BB7 /* CLOSGeneralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLOSGeneralViewController.h; path = ../CLOSGeneralViewController.h; sourceTree = "<group>"; };
+		EAF90F44199BEE6800372BB7 /* CLOSGeneralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLOSGeneralViewController.m; path = ../CLOSGeneralViewController.m; sourceTree = "<group>"; };
+		EAF90F45199BEE6800372BB7 /* CLOSGeneralViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CLOSGeneralViewController.xib; path = ../CLOSGeneralViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAC0B31C196F04DA004E310D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF4663A6199ACEF7009FA35E /* EventKit.framework in Frameworks */,
+				EA72E2A7198C469B00303ED4 /* MessageUI.framework in Frameworks */,
+				EAC6024D1982E0A600C5E5F1 /* MapKit.framework in Frameworks */,
+				138A7C90196F2669008AD0E9 /* Accounts.framework in Frameworks */,
+				138A7C91196F2669008AD0E9 /* Social.framework in Frameworks */,
+				EAC0B35C196F0575004E310D /* AudioToolbox.framework in Frameworks */,
+				EAC0B35D196F0575004E310D /* CFNetwork.framework in Frameworks */,
+				EAC0B35E196F0575004E310D /* CoreLocation.framework in Frameworks */,
+				EAC0B35F196F0575004E310D /* libz.dylib in Frameworks */,
+				EAC0B360196F0575004E310D /* MobileCoreServices.framework in Frameworks */,
+				EAC0B361196F0575004E310D /* QuartzCore.framework in Frameworks */,
+				EAC0B362196F0575004E310D /* Security.framework in Frameworks */,
+				EAC0B363196F0575004E310D /* StoreKit.framework in Frameworks */,
+				EAC0B364196F0575004E310D /* SystemConfiguration.framework in Frameworks */,
+				EAC0B325196F04DA004E310D /* CoreGraphics.framework in Frameworks */,
+				EAC0B327196F04DA004E310D /* UIKit.framework in Frameworks */,
+				BF2928A81982D42B0037385D /* FacebookSDK.framework in Frameworks */,
+				EAC0B352196F0512004E310D /* Parse.framework in Frameworks */,
+				EAC0B323196F04DA004E310D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC0B337196F04DA004E310D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC0B33C196F04DA004E310D /* XCTest.framework in Frameworks */,
+				EAC0B33E196F04DA004E310D /* UIKit.framework in Frameworks */,
+				EAC0B33D196F04DA004E310D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAC0B316196F04DA004E310D = {
+			isa = PBXGroup;
+			children = (
+				BFA1C397199960BE0028B596 /* cameraTab.png */,
+				BFA1C399199960CD0028B596 /* inventoryTab.png */,
+				13A62CC4199ABAE200CD3018 /* inventoryTab2.png */,
+				13A62CCA199AC46A00CD3018 /* inventoryTab2@2x.png */,
+				BFA1C39B199960D20028B596 /* profileTab.png */,
+				13A62CCE199AC6A600CD3018 /* profileTab2.png */,
+				13A62CCC199AC5F500CD3018 /* profileTab2@2x.png */,
+				BFA1C39D199960D90028B596 /* newsfeedTab.png */,
+				13A62CC0199AB60600CD3018 /* newsfeedTab2.png */,
+				13A62CC6199AC1DA00CD3018 /* newsfeedTab2@2x.png */,
+				BF65FBDF198AEFC700D18C25 /* timeIcon.png */,
+				BF346A7B199924DB00BC809F /* inventoryIcon.png */,
+				BF346A7D199924E400BC809F /* homeIcon.png */,
+				BF346A7F199924EE00BC809F /* photoIcon.png */,
+				BF346A81199924F700BC809F /* profileIcon.png */,
+				13A62CC2199AB90F00CD3018 /* cameraTab2.png */,
+				13A62CC8199AC2D500CD3018 /* cameraTab2@2x.png */,
+				EA56AD3119807DB000FD4F80 /* default-user-icon-profile.png */,
+				EA4484A4197F1A150038ECC8 /* dark-brown-wood-bg.jpg */,
+				13AAEC791986B9350035F885 /* fb_icon_325x325.png */,
+				EA43B450198B07A200CAFAE9 /* powered-by-google-on-non-white.png */,
+				EA43B452198B07B000CAFAE9 /* powered-by-google-on-non-white@2x.png */,
+				13CCD74D199A80050051EF38 /* kml_Heart copy.png */,
+				13CCD74E199A80050051EF38 /* kml_Heart.png */,
+				EACCF3A31999A57600828088 /* editedTutorialImages */,
+				EAF913E21978722600F0CE10 /* closetDoorImages */,
+				EAC0B351196F0512004E310D /* Parse.framework */,
+				EAC0B328196F04DA004E310D /* myCloset */,
+				EAC0B341196F04DA004E310D /* myClosetTests */,
+				EAC0B321196F04DA004E310D /* Frameworks */,
+				EAC0B320196F04DA004E310D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EAC0B320196F04DA004E310D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAC0B31F196F04DA004E310D /* Lend.app */,
+				EAC0B33A196F04DA004E310D /* LendTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAC0B321196F04DA004E310D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF4663A5199ACEF7009FA35E /* EventKit.framework */,
+				EA72E2A6198C469B00303ED4 /* MessageUI.framework */,
+				EAC6024C1982E0A600C5E5F1 /* MapKit.framework */,
+				BF2928A71982D42B0037385D /* FacebookSDK.framework */,
+				138A7C8E196F2669008AD0E9 /* Accounts.framework */,
+				138A7C8F196F2669008AD0E9 /* Social.framework */,
+				EAC0B353196F0575004E310D /* AudioToolbox.framework */,
+				EAC0B354196F0575004E310D /* CFNetwork.framework */,
+				EAC0B355196F0575004E310D /* CoreLocation.framework */,
+				EAC0B356196F0575004E310D /* libz.dylib */,
+				EAC0B357196F0575004E310D /* MobileCoreServices.framework */,
+				EAC0B358196F0575004E310D /* QuartzCore.framework */,
+				EAC0B359196F0575004E310D /* Security.framework */,
+				EAC0B35A196F0575004E310D /* StoreKit.framework */,
+				EAC0B35B196F0575004E310D /* SystemConfiguration.framework */,
+				EAC0B322196F04DA004E310D /* Foundation.framework */,
+				EAC0B324196F04DA004E310D /* CoreGraphics.framework */,
+				EAC0B326196F04DA004E310D /* UIKit.framework */,
+				EAC0B33B196F04DA004E310D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAC0B328196F04DA004E310D /* myCloset */ = {
+			isa = PBXGroup;
+			children = (
+				1342707419881DF100994451 /* PICA.jpg */,
+				EAF90F43199BEE6800372BB7 /* CLOSGeneralViewController.h */,
+				EAF90F44199BEE6800372BB7 /* CLOSGeneralViewController.m */,
+				EAF90F45199BEE6800372BB7 /* CLOSGeneralViewController.xib */,
+				EAA551B219998ED900BE8B1F /* CLOSScreenshotsViewController.h */,
+				EAA551B319998ED900BE8B1F /* CLOSScreenshotsViewController.m */,
+				EAA551B419998ED900BE8B1F /* CLOSScreenshotsViewController.xib */,
+				EA0E072E197DAC70002327E0 /* CLOSItemsYouveBorrowedViewController.h */,
+				EA0E072F197DAC70002327E0 /* CLOSItemsYouveBorrowedViewController.m */,
+				EA0E0730197DAC70002327E0 /* CLOSItemsYouveBorrowedViewController.xib */,
+				EAC0B331196F04DA004E310D /* CLOSAppDelegate.h */,
+				EAC0B332196F04DA004E310D /* CLOSAppDelegate.m */,
+				EAC0B334196F04DA004E310D /* Images.xcassets */,
+				EAC0B329196F04DA004E310D /* Supporting Files */,
+				BF939ECD196F364300BBEC72 /* CLOSClosetCell.h */,
+				BF939ECE196F364300BBEC72 /* CLOSClosetCell.m */,
+				BF939ED2196F3B7C00BBEC72 /* CLOSClosetCell.xib */,
+				138A7C59196F09FB008AD0E9 /* CLOSloginViewController.h */,
+				138A7C5A196F09FB008AD0E9 /* CLOSloginViewController.m */,
+				138A7C5B196F09FB008AD0E9 /* CLOSloginViewController.xib */,
+				BFADF50E1981AAB8004B856C /* CLOSSignUpDetailViewController.h */,
+				BFADF50F1981AAB8004B856C /* CLOSSignUpDetailViewController.m */,
+				BFADF5101981AAB8004B856C /* CLOSSignUpDetailViewController.xib */,
+				138A7C63196F0AE5008AD0E9 /* CLOSProfileViewController.h */,
+				138A7C64196F0AE5008AD0E9 /* CLOSProfileViewController.m */,
+				EA0DB61E1992D46600CA3D79 /* CLOSReportAUserView.h */,
+				EA0DB61F1992D46600CA3D79 /* CLOSReportAUserView.m */,
+				EA0DB6211992D74E00CA3D79 /* CLOSReportAUserViewController.h */,
+				EA0DB6221992D74F00CA3D79 /* CLOSReportAUserViewController.m */,
+				138A7C65196F0AE5008AD0E9 /* CLOSProfileViewController.xib */,
+				EAC602471982DEF700C5E5F1 /* CLOSMapViewController.h */,
+				EAC602481982DEF700C5E5F1 /* CLOSMapViewController.m */,
+				EAC602491982DEF700C5E5F1 /* CLOSMapViewController.xib */,
+				EAEB45A219830C4F004AFFB8 /* CLOSClosetsAtPlacemarkViewController.h */,
+				EAEB45A319830C4F004AFFB8 /* CLOSClosetsAtPlacemarkViewController.m */,
+				EAEB45A419830C4F004AFFB8 /* CLOSClosetsAtPlacemarkViewController.xib */,
+				EAF3E6B019749B0900183732 /* CLOSFriendListViewController.h */,
+				EAF3E6B119749B0900183732 /* CLOSFriendListViewController.m */,
+				EAF3E6B219749B0900183732 /* CLOSFriendListViewController.xib */,
+				EA3D0B9D198FFFEC00CCBB50 /* CLOSPendingFollowRequestsTableViewController.h */,
+				EA3D0B9E198FFFEC00CCBB50 /* CLOSPendingFollowRequestsTableViewController.m */,
+				EA29026019901067009B7E96 /* CLOSPendingFollowRequestsTableViewCell.h */,
+				EA29026119901067009B7E96 /* CLOSPendingFollowRequestsTableViewCell.m */,
+				EA29026319901408009B7E96 /* CLOSPendingFollowRequestsTableViewCell.xib */,
+				BF1571841970497500069252 /* CLOSAddItemToClosetViewController.h */,
+				BF1571851970497500069252 /* CLOSAddItemToClosetViewController.m */,
+				BF1571861970497500069252 /* CLOSAddItemToClosetViewController.xib */,
+				13FCDBBB1975B20E00968863 /* CLOSSearchTableViewCell.h */,
+				13FCDBBC1975B20E00968863 /* CLOSSearchTableViewCell.m */,
+				13FCDBBD1975B20E00968863 /* CLOSSearchTableViewCell.xib */,
+				13801B6A19749C6B00B2369A /* CLOSSearchViewController.m */,
+				13801B6B19749C6B00B2369A /* CLOSSearchViewController.xib */,
+				138A7C68196F0B01008AD0E9 /* CLOSSearchViewController.h */,
+				138A7C6D196F0B4F008AD0E9 /* CLOSCameraViewController.h */,
+				138A7C6E196F0B4F008AD0E9 /* CLOSCameraViewController.m */,
+				138A7C75196F0B7B008AD0E9 /* CLOSIndividualClosetViewController.h */,
+				138A7C76196F0B7B008AD0E9 /* CLOSIndividualClosetViewController.m */,
+				138A7C77196F0B7B008AD0E9 /* CLOSIndividualClosetViewController.xib */,
+				138A7C70196F0B5A008AD0E9 /* CLOSInventoryViewController.h */,
+				138A7C71196F0B5A008AD0E9 /* CLOSInventoryViewController.m */,
+				138A7C72196F0B5A008AD0E9 /* CLOSInventoryViewController.xib */,
+				BF6C066F19771BEE00EF3E5A /* CLOSInventoryTableViewCell.h */,
+				BF6C067019771BEE00EF3E5A /* CLOSInventoryTableViewCell.m */,
+				BF6C067119771BEE00EF3E5A /* CLOSInventoryTableViewCell.xib */,
+				138A7C7A196F0B98008AD0E9 /* CLOSItemViewController.h */,
+				138A7C7B196F0B98008AD0E9 /* CLOSItemViewController.m */,
+				138A7C7C196F0B98008AD0E9 /* CLOSItemViewController.xib */,
+				138A7C7F196F0BA5008AD0E9 /* CLOSBorrowViewController.h */,
+				138A7C80196F0BA5008AD0E9 /* CLOSBorrowViewController.m */,
+				138A7C81196F0BA5008AD0E9 /* CLOSBorrowViewController.xib */,
+				BF7885E91978731F0088936C /* CLOSTransactionViewController.h */,
+				BF7885EB1978731F0088936C /* CLOSTransactionViewController.xib */,
+				BF7885EA1978731F0088936C /* CLOSTransactionViewController.m */,
+				EA0E0729197D9253002327E0 /* CLOSSettingsViewController.h */,
+				EA0E072A197D9253002327E0 /* CLOSSettingsViewController.m */,
+				EA0E072B197D9253002327E0 /* CLOSSettingsViewController.xib */,
+				EA43B456198C231D00CAFAE9 /* CLOSReportAProblemViewController.h */,
+				EA43B457198C231D00CAFAE9 /* CLOSReportAProblemViewController.m */,
+				EA43B458198C231D00CAFAE9 /* CLOSReportAProblemViewController.xib */,
+				EA32E0CB197ECCD2009219D0 /* CLOSPrivacySettingsViewController.h */,
+				EA32E0CC197ECCD2009219D0 /* CLOSPrivacySettingsViewController.m */,
+				EA32E0CD197ECCD2009219D0 /* CLOSPrivacySettingsViewController.xib */,
+				EABCC56F1986DEA100DDE84A /* CLOSEditClosetLocationViewController.h */,
+				EABCC5701986DEA100DDE84A /* CLOSEditClosetLocationViewController.m */,
+				EABCC5711986DEA100DDE84A /* CLOSEditClosetLocationViewController.xib */,
+				EA43B454198B102400CAFAE9 /* CLOSLocationSearchView.xib */,
+				BF2928A91982D8D60037385D /* CLOSSettingsFindFriendsViewController.h */,
+				BF2928AA1982D8D60037385D /* CLOSSettingsFindFriendsViewController.m */,
+				BF2928AB1982D8D60037385D /* CLOSSettingsFindFriendsViewController.xib */,
+				BFFCD04619872C460025455A /* CLOSNewsFeedViewController.h */,
+				BFFCD04719872C460025455A /* CLOSNewsFeedViewController.m */,
+				BFFCD04819872C460025455A /* CLOSNewsFeedViewController.xib */,
+				13CCD75B199A843B0051EF38 /* CLOSNewsFeedHeaderView.h */,
+				13CCD75C199A843B0051EF38 /* CLOSNewsFeedHeaderView.m */,
+				BF484FC31990665C00EE7482 /* CLOSLikesViewController.h */,
+				BF484FC41990665C00EE7482 /* CLOSLikesViewController.m */,
+				BF484FC51990665C00EE7482 /* CLOSLikesViewController.xib */,
+				BF9E2179198FFC0700A83734 /* CLOSMapPopoverViewController.h */,
+				BF9E217A198FFC0700A83734 /* CLOSMapPopoverViewController.m */,
+				BF9E217B198FFC0700A83734 /* CLOSMapPopoverViewController.xib */,
+				BFFCD04B1988624F0025455A /* CLOSNewsFeedTableViewCell.h */,
+				BFFCD04C1988624F0025455A /* CLOSNewsFeedTableViewCell.m */,
+				BFFCD04D1988624F0025455A /* CLOSNewsFeedTableViewCell.xib */,
+				138A7C84196F0BB4008AD0E9 /* CLOSCreateClosetViewController.h */,
+				138A7C85196F0BB4008AD0E9 /* CLOSCreateClosetViewController.m */,
+				138A7C86196F0BB4008AD0E9 /* CLOSCreateClosetViewController.xib */,
+				138A7C89196F0BBE008AD0E9 /* CLOSCreateItemViewController.h */,
+				138A7C8A196F0BBE008AD0E9 /* CLOSCreateItemViewController.m */,
+				138A7C8B196F0BBE008AD0E9 /* CLOSCreateItemViewController.xib */,
+				EA0DB6241993249800CA3D79 /* CLOSGroupListTableViewController.h */,
+				EA0DB6251993249800CA3D79 /* CLOSGroupListTableViewController.m */,
+				EA0DB6271993256F00CA3D79 /* CLOSGroupProfileViewController.h */,
+				EA0DB6281993256F00CA3D79 /* CLOSGroupProfileViewController.m */,
+				EA0DB6291993256F00CA3D79 /* CLOSGroupProfileViewController.xib */,
+				EA0DB62C1993257C00CA3D79 /* CLOSGroupSearchViewController.h */,
+				EA0DB62D1993257C00CA3D79 /* CLOSGroupSearchViewController.m */,
+				EA0DB62E1993257C00CA3D79 /* CLOSGroupSearchViewController.xib */,
+				EA0DB63119932BAF00CA3D79 /* CLOSAddMemberToGroupViewController.h */,
+				EA0DB63219932BAF00CA3D79 /* CLOSAddMemberToGroupViewController.m */,
+				EA0DB63319932BAF00CA3D79 /* CLOSAddMemberToGroupViewController.xib */,
+				EA0DB636199332B800CA3D79 /* CLOSCreateGroupViewController.h */,
+				EA0DB637199332B800CA3D79 /* CLOSCreateGroupViewController.m */,
+				EA0DB638199332B800CA3D79 /* CLOSCreateGroupViewController.xib */,
+				EAE989511994479500A358E4 /* Reachability.h */,
+				EAE989521994479500A358E4 /* Reachability.m */,
+			);
+			path = myCloset;
+			sourceTree = "<group>";
+		};
+		EAC0B329196F04DA004E310D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAC0B32A196F04DA004E310D /* Lend-Info.plist */,
+				EAC0B32B196F04DA004E310D /* InfoPlist.strings */,
+				EAC0B32E196F04DA004E310D /* main.m */,
+				EAC0B330196F04DA004E310D /* Lend-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAC0B341196F04DA004E310D /* myClosetTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAC0B347196F04DA004E310D /* myClosetTests.m */,
+				EAC0B342196F04DA004E310D /* Supporting Files */,
+			);
+			path = myClosetTests;
+			sourceTree = "<group>";
+		};
+		EAC0B342196F04DA004E310D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAC0B343196F04DA004E310D /* LendTests-Info.plist */,
+				EAC0B344196F04DA004E310D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EACCF3A31999A57600828088 /* editedTutorialImages */ = {
+			isa = PBXGroup;
+			children = (
+				EACCF3A41999A57600828088 /* image[0].png */,
+				EACCF3A51999A57600828088 /* image[1].png */,
+				EACCF3A61999A57600828088 /* image[2].png */,
+				EACCF3A71999A57600828088 /* image[3].png */,
+				EACCF3A81999A57600828088 /* image[4].png */,
+				EACCF3A91999A57600828088 /* image[5].png */,
+				EACCF3AA1999A57600828088 /* image[6].png */,
+			);
+			path = editedTutorialImages;
+			sourceTree = "<group>";
+		};
+		EAF913E21978722600F0CE10 /* closetDoorImages */ = {
+			isa = PBXGroup;
+			children = (
+				EAF90F27199BD7B000372BB7 /* closetDoor[0].jpg */,
+				EAF90F37199BE5D800372BB7 /* closetDoor[1].jpg */,
+				EAF90F38199BE5D800372BB7 /* closetDoor[2].jpg */,
+				EAF90F2A199BD7B000372BB7 /* closetDoor[3].jpg */,
+				EAF90F33199BDF4C00372BB7 /* closetDoor[4].jpg */,
+				EAF90F2C199BD7B000372BB7 /* closetDoor[5].jpg */,
+			);
+			path = closetDoorImages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAC0B31E196F04DA004E310D /* Lend */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAC0B34B196F04DA004E310D /* Build configuration list for PBXNativeTarget "Lend" */;
+			buildPhases = (
+				EAC0B31B196F04DA004E310D /* Sources */,
+				EAC0B31C196F04DA004E310D /* Frameworks */,
+				EAC0B31D196F04DA004E310D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lend;
+			productName = myCloset;
+			productReference = EAC0B31F196F04DA004E310D /* Lend.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAC0B339196F04DA004E310D /* LendTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAC0B34E196F04DA004E310D /* Build configuration list for PBXNativeTarget "LendTests" */;
+			buildPhases = (
+				EAC0B336196F04DA004E310D /* Sources */,
+				EAC0B337196F04DA004E310D /* Frameworks */,
+				EAC0B338196F04DA004E310D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAC0B340196F04DA004E310D /* PBXTargetDependency */,
+			);
+			name = LendTests;
+			productName = myClosetTests;
+			productReference = EAC0B33A196F04DA004E310D /* LendTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAC0B317196F04DA004E310D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CLOS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___rpinsker___";
+				TargetAttributes = {
+					EAC0B31E196F04DA004E310D = {
+						DevelopmentTeam = HUQ385ZCDC;
+					};
+					EAC0B339196F04DA004E310D = {
+						TestTargetID = EAC0B31E196F04DA004E310D;
+					};
+				};
+			};
+			buildConfigurationList = EAC0B31A196F04DA004E310D /* Build configuration list for PBXProject "Lend" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EAC0B316196F04DA004E310D;
+			productRefGroup = EAC0B320196F04DA004E310D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAC0B31E196F04DA004E310D /* Lend */,
+				EAC0B339196F04DA004E310D /* LendTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAC0B31D196F04DA004E310D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAF90F3A199BE5D800372BB7 /* closetDoor[2].jpg in Resources */,
+				EACCF3B11999A57600828088 /* image[6].png in Resources */,
+				EAC6024B1982DEF700C5E5F1 /* CLOSMapViewController.xib in Resources */,
+				BF9E217D198FFC0700A83734 /* CLOSMapPopoverViewController.xib in Resources */,
+				BF939ED3196F3B7C00BBEC72 /* CLOSClosetCell.xib in Resources */,
+				BF484FC71990665C00EE7482 /* CLOSLikesViewController.xib in Resources */,
+				BFA1C398199960BE0028B596 /* cameraTab.png in Resources */,
+				138A7C8D196F0BBE008AD0E9 /* CLOSCreateItemViewController.xib in Resources */,
+				13A62CC5199ABAE200CD3018 /* inventoryTab2.png in Resources */,
+				BF346A82199924F700BC809F /* profileIcon.png in Resources */,
+				EA32E0CF197ECCD2009219D0 /* CLOSPrivacySettingsViewController.xib in Resources */,
+				EA56AD3219807DB000FD4F80 /* default-user-icon-profile.png in Resources */,
+				BFA1C39C199960D20028B596 /* profileTab.png in Resources */,
+				BF65FBE0198AEFC700D18C25 /* timeIcon.png in Resources */,
+				EAF90F39199BE5D800372BB7 /* closetDoor[1].jpg in Resources */,
+				EA0DB63519932BAF00CA3D79 /* CLOSAddMemberToGroupViewController.xib in Resources */,
+				EA0DB6301993257C00CA3D79 /* CLOSGroupSearchViewController.xib in Resources */,
+				138A7C7E196F0B98008AD0E9 /* CLOSItemViewController.xib in Resources */,
+				13801B6E19749C6B00B2369A /* CLOSSearchViewController.xib in Resources */,
+				BF1571881970497500069252 /* CLOSAddItemToClosetViewController.xib in Resources */,
+				EAF90F32199BD7B000372BB7 /* closetDoor[5].jpg in Resources */,
+				EA43B451198B07A200CAFAE9 /* powered-by-google-on-non-white.png in Resources */,
+				BFA1C39A199960CD0028B596 /* inventoryTab.png in Resources */,
+				BF346A7C199924DB00BC809F /* inventoryIcon.png in Resources */,
+				EA43B455198B102400CAFAE9 /* CLOSLocationSearchView.xib in Resources */,
+				EA0E0732197DAC70002327E0 /* CLOSItemsYouveBorrowedViewController.xib in Resources */,
+				13A62CCD199AC5F500CD3018 /* profileTab2@2x.png in Resources */,
+				EA43B45A198C231D00CAFAE9 /* CLOSReportAProblemViewController.xib in Resources */,
+				EACCF3AD1999A57600828088 /* image[2].png in Resources */,
+				EACCF3AE1999A57600828088 /* image[3].png in Resources */,
+				BF7885ED1978731F0088936C /* CLOSTransactionViewController.xib in Resources */,
+				EAA551B619998ED900BE8B1F /* CLOSScreenshotsViewController.xib in Resources */,
+				EA29026419901408009B7E96 /* CLOSPendingFollowRequestsTableViewCell.xib in Resources */,
+				EA0DB62B1993256F00CA3D79 /* CLOSGroupProfileViewController.xib in Resources */,
+				EACCF3AC1999A57600828088 /* image[1].png in Resources */,
+				138A7C74196F0B5A008AD0E9 /* CLOSInventoryViewController.xib in Resources */,
+				BF346A7E199924E400BC809F /* homeIcon.png in Resources */,
+				13AAEC7A1986B9350035F885 /* fb_icon_325x325.png in Resources */,
+				13A62CC3199AB90F00CD3018 /* cameraTab2.png in Resources */,
+				1342707519881DF100994451 /* PICA.jpg in Resources */,
+				BF6C067319771BEE00EF3E5A /* CLOSInventoryTableViewCell.xib in Resources */,
+				13CCD750199A80050051EF38 /* kml_Heart.png in Resources */,
+				EAF90F2D199BD7B000372BB7 /* closetDoor[0].jpg in Resources */,
+				13A62CC7199AC1DA00CD3018 /* newsfeedTab2@2x.png in Resources */,
+				EACCF3AB1999A57600828088 /* image[0].png in Resources */,
+				13A62CCF199AC6A600CD3018 /* profileTab2.png in Resources */,
+				EACCF3B01999A57600828088 /* image[5].png in Resources */,
+				EA0DB63A199332B800CA3D79 /* CLOSCreateGroupViewController.xib in Resources */,
+				BFA1C39E199960D90028B596 /* newsfeedTab.png in Resources */,
+				13A62CC9199AC2D500CD3018 /* cameraTab2@2x.png in Resources */,
+				BF346A80199924EE00BC809F /* photoIcon.png in Resources */,
+				BF2928AD1982D8D60037385D /* CLOSSettingsFindFriendsViewController.xib in Resources */,
+				EAF90F47199BEE6800372BB7 /* CLOSGeneralViewController.xib in Resources */,
+				BFADF5121981AAB8004B856C /* CLOSSignUpDetailViewController.xib in Resources */,
+				13CCD74F199A80050051EF38 /* kml_Heart copy.png in Resources */,
+				EA0E072D197D9253002327E0 /* CLOSSettingsViewController.xib in Resources */,
+				EAF90F34199BDF4C00372BB7 /* closetDoor[4].jpg in Resources */,
+				EAC0B32D196F04DA004E310D /* InfoPlist.strings in Resources */,
+				13A62CC1199AB60600CD3018 /* newsfeedTab2.png in Resources */,
+				138A7C79196F0B7B008AD0E9 /* CLOSIndividualClosetViewController.xib in Resources */,
+				EAC0B335196F04DA004E310D /* Images.xcassets in Resources */,
+				138A7C67196F0AE5008AD0E9 /* CLOSProfileViewController.xib in Resources */,
+				BFFCD04F1988624F0025455A /* CLOSNewsFeedTableViewCell.xib in Resources */,
+				EA43B453198B07B000CAFAE9 /* powered-by-google-on-non-white@2x.png in Resources */,
+				EAF3E6B419749B0900183732 /* CLOSFriendListViewController.xib in Resources */,
+				EACCF3AF1999A57600828088 /* image[4].png in Resources */,
+				138A7C5D196F09FB008AD0E9 /* CLOSloginViewController.xib in Resources */,
+				EAEB45A619830C4F004AFFB8 /* CLOSClosetsAtPlacemarkViewController.xib in Resources */,
+				EAF90F30199BD7B000372BB7 /* closetDoor[3].jpg in Resources */,
+				13FCDBBF1975B20E00968863 /* CLOSSearchTableViewCell.xib in Resources */,
+				13A62CCB199AC46A00CD3018 /* inventoryTab2@2x.png in Resources */,
+				138A7C88196F0BB4008AD0E9 /* CLOSCreateClosetViewController.xib in Resources */,
+				BFFCD04A19872C460025455A /* CLOSNewsFeedViewController.xib in Resources */,
+				138A7C83196F0BA5008AD0E9 /* CLOSBorrowViewController.xib in Resources */,
+				EA4484A6197F1A150038ECC8 /* dark-brown-wood-bg.jpg in Resources */,
+				EABCC5731986DEA100DDE84A /* CLOSEditClosetLocationViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC0B338196F04DA004E310D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC0B346196F04DA004E310D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAC0B31B196F04DA004E310D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF484FC61990665C00EE7482 /* CLOSLikesViewController.m in Sources */,
+				EA0DB6201992D46600CA3D79 /* CLOSReportAUserView.m in Sources */,
+				EA0DB6231992D74F00CA3D79 /* CLOSReportAUserViewController.m in Sources */,
+				EA0DB639199332B800CA3D79 /* CLOSCreateGroupViewController.m in Sources */,
+				138A7C8C196F0BBE008AD0E9 /* CLOSCreateItemViewController.m in Sources */,
+				EABCC5721986DEA100DDE84A /* CLOSEditClosetLocationViewController.m in Sources */,
+				138A7C7D196F0B98008AD0E9 /* CLOSItemViewController.m in Sources */,
+				EA0E0731197DAC70002327E0 /* CLOSItemsYouveBorrowedViewController.m in Sources */,
+				BFFCD04919872C460025455A /* CLOSNewsFeedViewController.m in Sources */,
+				138A7C5C196F09FB008AD0E9 /* CLOSloginViewController.m in Sources */,
+				138A7C6F196F0B4F008AD0E9 /* CLOSCameraViewController.m in Sources */,
+				13FCDBBE1975B20E00968863 /* CLOSSearchTableViewCell.m in Sources */,
+				EAC0B32F196F04DA004E310D /* main.m in Sources */,
+				EAC0B333196F04DA004E310D /* CLOSAppDelegate.m in Sources */,
+				138A7C82196F0BA5008AD0E9 /* CLOSBorrowViewController.m in Sources */,
+				EA0DB6261993249800CA3D79 /* CLOSGroupListTableViewController.m in Sources */,
+				BF9E217C198FFC0700A83734 /* CLOSMapPopoverViewController.m in Sources */,
+				138A7C78196F0B7B008AD0E9 /* CLOSIndividualClosetViewController.m in Sources */,
+				138A7C66196F0AE5008AD0E9 /* CLOSProfileViewController.m in Sources */,
+				138A7C73196F0B5A008AD0E9 /* CLOSInventoryViewController.m in Sources */,
+				13801B6D19749C6B00B2369A /* CLOSSearchViewController.m in Sources */,
+				EA0DB62A1993256F00CA3D79 /* CLOSGroupProfileViewController.m in Sources */,
+				EA32E0CE197ECCD2009219D0 /* CLOSPrivacySettingsViewController.m in Sources */,
+				BFFCD04E1988624F0025455A /* CLOSNewsFeedTableViewCell.m in Sources */,
+				EA0E072C197D9253002327E0 /* CLOSSettingsViewController.m in Sources */,
+				138A7C87196F0BB4008AD0E9 /* CLOSCreateClosetViewController.m in Sources */,
+				BFADF5111981AAB8004B856C /* CLOSSignUpDetailViewController.m in Sources */,
+				EA3D0BA0198FFFEC00CCBB50 /* CLOSPendingFollowRequestsTableViewController.m in Sources */,
+				BF2928AC1982D8D60037385D /* CLOSSettingsFindFriendsViewController.m in Sources */,
+				EA43B459198C231D00CAFAE9 /* CLOSReportAProblemViewController.m in Sources */,
+				EA0DB62F1993257C00CA3D79 /* CLOSGroupSearchViewController.m in Sources */,
+				EA0DB63419932BAF00CA3D79 /* CLOSAddMemberToGroupViewController.m in Sources */,
+				EAF90F46199BEE6800372BB7 /* CLOSGeneralViewController.m in Sources */,
+				EAEB45A519830C4F004AFFB8 /* CLOSClosetsAtPlacemarkViewController.m in Sources */,
+				EAA551B519998ED900BE8B1F /* CLOSScreenshotsViewController.m in Sources */,
+				13CCD75D199A843B0051EF38 /* CLOSNewsFeedHeaderView.m in Sources */,
+				EAC6024A1982DEF700C5E5F1 /* CLOSMapViewController.m in Sources */,
+				BF6C067219771BEE00EF3E5A /* CLOSInventoryTableViewCell.m in Sources */,
+				BF939ECF196F364300BBEC72 /* CLOSClosetCell.m in Sources */,
+				EAF3E6B319749B0900183732 /* CLOSFriendListViewController.m in Sources */,
+				EA29026219901067009B7E96 /* CLOSPendingFollowRequestsTableViewCell.m in Sources */,
+				BF1571871970497500069252 /* CLOSAddItemToClosetViewController.m in Sources */,
+				EAE989531994479500A358E4 /* Reachability.m in Sources */,
+				BF7885EC1978731F0088936C /* CLOSTransactionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC0B336196F04DA004E310D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC0B348196F04DA004E310D /* myClosetTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAC0B340196F04DA004E310D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAC0B31E196F04DA004E310D /* Lend */;
+			targetProxy = EAC0B33F196F04DA004E310D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAC0B32B196F04DA004E310D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAC0B32C196F04DA004E310D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EAC0B344196F04DA004E310D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAC0B345196F04DA004E310D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAC0B349196F04DA004E310D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: samantha wiener (TW94BBD4Z6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: samantha wiener (TW94BBD4Z6)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "69DA9E25-729A-47E5-8B61-096487DE560F";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EAC0B34A196F04DA004E310D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: samantha wiener (TW94BBD4Z6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: samantha wiener (TW94BBD4Z6)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PROVISIONING_PROFILE = "69DA9E25-729A-47E5-8B61-096487DE560F";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAC0B34C196F04DA004E310D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/Users/srwiener/Documents/FacebookSDK,
+					/Users/srwiener/src/fbobjc/Apps/Instagram/Instagram/Vendor/Facebook,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "myCloset/Lend-Prefix.pch";
+				INFOPLIST_FILE = "myCloset/Lend-Info.plist";
+				PRODUCT_NAME = Lend;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EAC0B34D196F04DA004E310D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/Users/srwiener/Documents/FacebookSDK,
+					/Users/srwiener/src/fbobjc/Apps/Instagram/Instagram/Vendor/Facebook,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "myCloset/Lend-Prefix.pch";
+				INFOPLIST_FILE = "myCloset/Lend-Info.plist";
+				PRODUCT_NAME = Lend;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EAC0B34F196F04DA004E310D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/myCloset.app/myCloset";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "myCloset/myCloset-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "myClosetTests/LendTests-Info.plist";
+				PRODUCT_NAME = LendTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EAC0B350196F04DA004E310D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/myCloset.app/myCloset";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "myCloset/myCloset-Prefix.pch";
+				INFOPLIST_FILE = "myClosetTests/LendTests-Info.plist";
+				PRODUCT_NAME = LendTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAC0B31A196F04DA004E310D /* Build configuration list for PBXProject "Lend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAC0B349196F04DA004E310D /* Debug */,
+				EAC0B34A196F04DA004E310D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAC0B34B196F04DA004E310D /* Build configuration list for PBXNativeTarget "Lend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAC0B34C196F04DA004E310D /* Debug */,
+				EAC0B34D196F04DA004E310D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAC0B34E196F04DA004E310D /* Build configuration list for PBXNativeTarget "LendTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAC0B34F196F04DA004E310D /* Debug */,
+				EAC0B350196F04DA004E310D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAC0B317196F04DA004E310D /* Project object */;
+}

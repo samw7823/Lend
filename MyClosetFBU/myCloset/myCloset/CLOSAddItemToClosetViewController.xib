@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CLOSAddItemToClosetViewController">
+            <connections>
+                <outlet property="collectionView" destination="kuc-sH-n71" id="rnC-Mb-1Ai"/>
+                <outlet property="doneButton" destination="7TH-Vh-DhQ" id="Z05-22-QUp"/>
+                <outlet property="navBar" destination="ZAb-CC-aUT" id="n2I-pc-Bxd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dark-brown-wood-bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="J59-Eb-urK">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <collectionView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="kuc-sH-n71">
+                    <rect key="frame" x="0.0" y="65" width="320" height="459"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ShL-zL-huI">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <cells/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="elK-HG-YtC"/>
+                        <outlet property="delegate" destination="-1" id="4CI-C6-5Cd"/>
+                    </connections>
+                </collectionView>
+                <navigationBar contentMode="scaleToFill" fixedFrame="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="ZAb-CC-aUT">
+                    <rect key="frame" x="0.0" y="21" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <textAttributes key="titleTextAttributes">
+                        <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="20"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem id="FMI-oa-pql">
+                            <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Qh9-iU-OCb">
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="canelPressed:" destination="-1" id="bfb-SB-YvQ"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem key="rightBarButtonItem" systemItem="add" id="w7E-PU-9hH">
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="addItemCloset:" destination="-1" id="gbU-mz-ult"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a1X-UR-CCn">
+                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="a1X-UR-CCn" secondAttribute="height" multiplier="80:11" id="EZj-Vo-XwR"/>
+                        <constraint firstAttribute="width" constant="320" id="vMJ-8O-D5B"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem systemItem="done" id="7TH-Vh-DhQ">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="donePressed:" destination="-1" id="oDC-Qg-Per"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                    <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="kuc-sH-n71" secondAttribute="bottom" constant="44" id="7tN-bC-rKz"/>
+                <constraint firstAttribute="bottom" secondItem="J59-Eb-urK" secondAttribute="bottom" id="9OO-Hl-1Z7"/>
+                <constraint firstAttribute="trailing" secondItem="kuc-sH-n71" secondAttribute="trailing" id="F60-nd-g5e"/>
+                <constraint firstItem="kuc-sH-n71" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="65" id="FqS-ha-7Tl"/>
+                <constraint firstItem="a1X-UR-CCn" firstAttribute="top" secondItem="kuc-sH-n71" secondAttribute="bottom" id="JPM-Yx-RUG"/>
+                <constraint firstItem="J59-Eb-urK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="QHU-pX-gck"/>
+                <constraint firstAttribute="trailing" secondItem="J59-Eb-urK" secondAttribute="trailing" id="a85-ol-31c"/>
+                <constraint firstItem="a1X-UR-CCn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kdg-2c-T3S"/>
+                <constraint firstItem="kuc-sH-n71" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lov-bI-jXk"/>
+                <constraint firstItem="J59-Eb-urK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xbQ-b5-kRP"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dark-brown-wood-bg.jpg" width="1600" height="1000"/>
+    </resources>
+</document>

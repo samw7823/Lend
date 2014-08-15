@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2B04855B-34D8-4D01-88FD-DFD78EB18B39</string>
+	<key>IDESourceControlProjectName</key>
+	<string>myCloset</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7616829C-367E-4FD5-926A-37B127B4B55C</key>
+		<string>ssh://projects.git.vip.facebook.com/data/gitrepos/fbobjc.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Users/MyClosetFBU/myCloset/myCloset.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7616829C-367E-4FD5-926A-37B127B4B55C</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://projects.git.vip.facebook.com/data/gitrepos/fbobjc.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7616829C-367E-4FD5-926A-37B127B4B55C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7616829C-367E-4FD5-926A-37B127B4B55C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>fbobjc</string>
+		</dict>
+	</array>
+</dict>
+</plist>
