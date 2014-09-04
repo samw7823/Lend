@@ -74,6 +74,7 @@
 		BFFCD04A19872C460025455A /* CLOSNewsFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFFCD04819872C460025455A /* CLOSNewsFeedViewController.xib */; };
 		BFFCD04E1988624F0025455A /* CLOSNewsFeedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFCD04C1988624F0025455A /* CLOSNewsFeedTableViewCell.m */; };
 		BFFCD04F1988624F0025455A /* CLOSNewsFeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFFCD04D1988624F0025455A /* CLOSNewsFeedTableViewCell.xib */; };
+		CC1D0E8F19B8D3B7004350F1 /* dark-brown-wood-bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC1D0E8E19B8D3B7004350F1 /* dark-brown-wood-bg.jpg */; };
 		EA0DB6201992D46600CA3D79 /* CLOSReportAUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0DB61F1992D46600CA3D79 /* CLOSReportAUserView.m */; };
 		EA0DB6231992D74F00CA3D79 /* CLOSReportAUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0DB6221992D74F00CA3D79 /* CLOSReportAUserViewController.m */; };
 		EA0DB6261993249800CA3D79 /* CLOSGroupListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0DB6251993249800CA3D79 /* CLOSGroupListTableViewController.m */; };
@@ -99,7 +100,6 @@
 		EA43B455198B102400CAFAE9 /* CLOSLocationSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA43B454198B102400CAFAE9 /* CLOSLocationSearchView.xib */; };
 		EA43B459198C231D00CAFAE9 /* CLOSReportAProblemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA43B457198C231D00CAFAE9 /* CLOSReportAProblemViewController.m */; };
 		EA43B45A198C231D00CAFAE9 /* CLOSReportAProblemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA43B458198C231D00CAFAE9 /* CLOSReportAProblemViewController.xib */; };
-		EA4484A6197F1A150038ECC8 /* dark-brown-wood-bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA4484A4197F1A150038ECC8 /* dark-brown-wood-bg.jpg */; };
 		EA56AD3219807DB000FD4F80 /* default-user-icon-profile.png in Resources */ = {isa = PBXBuildFile; fileRef = EA56AD3119807DB000FD4F80 /* default-user-icon-profile.png */; };
 		EA72E2A7198C469B00303ED4 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA72E2A6198C469B00303ED4 /* MessageUI.framework */; };
 		EAA551B519998ED900BE8B1F /* CLOSScreenshotsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA551B319998ED900BE8B1F /* CLOSScreenshotsViewController.m */; };
@@ -253,6 +253,7 @@
 		BFFCD04B1988624F0025455A /* CLOSNewsFeedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSNewsFeedTableViewCell.h; sourceTree = "<group>"; };
 		BFFCD04C1988624F0025455A /* CLOSNewsFeedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSNewsFeedTableViewCell.m; sourceTree = "<group>"; };
 		BFFCD04D1988624F0025455A /* CLOSNewsFeedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSNewsFeedTableViewCell.xib; sourceTree = "<group>"; };
+		CC1D0E8E19B8D3B7004350F1 /* dark-brown-wood-bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dark-brown-wood-bg.jpg"; sourceTree = "<group>"; };
 		EA0DB61E1992D46600CA3D79 /* CLOSReportAUserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSReportAUserView.h; sourceTree = "<group>"; };
 		EA0DB61F1992D46600CA3D79 /* CLOSReportAUserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSReportAUserView.m; sourceTree = "<group>"; };
 		EA0DB6211992D74E00CA3D79 /* CLOSReportAUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSReportAUserViewController.h; sourceTree = "<group>"; };
@@ -291,7 +292,6 @@
 		EA43B456198C231D00CAFAE9 /* CLOSReportAProblemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSReportAProblemViewController.h; sourceTree = "<group>"; };
 		EA43B457198C231D00CAFAE9 /* CLOSReportAProblemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSReportAProblemViewController.m; sourceTree = "<group>"; };
 		EA43B458198C231D00CAFAE9 /* CLOSReportAProblemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSReportAProblemViewController.xib; sourceTree = "<group>"; };
-		EA4484A4197F1A150038ECC8 /* dark-brown-wood-bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dark-brown-wood-bg.jpg"; sourceTree = "<group>"; };
 		EA56AD3119807DB000FD4F80 /* default-user-icon-profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-user-icon-profile.png"; sourceTree = "<group>"; };
 		EA72E2A6198C469B00303ED4 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		EAA551B219998ED900BE8B1F /* CLOSScreenshotsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSScreenshotsViewController.h; sourceTree = "<group>"; };
@@ -417,7 +417,7 @@
 				13A62CC2199AB90F00CD3018 /* cameraTab2.png */,
 				13A62CC8199AC2D500CD3018 /* cameraTab2@2x.png */,
 				EA56AD3119807DB000FD4F80 /* default-user-icon-profile.png */,
-				EA4484A4197F1A150038ECC8 /* dark-brown-wood-bg.jpg */,
+				CC1D0E8E19B8D3B7004350F1 /* dark-brown-wood-bg.jpg */,
 				13AAEC791986B9350035F885 /* fb_icon_325x325.png */,
 				EA43B450198B07A200CAFAE9 /* powered-by-google-on-non-white.png */,
 				EA43B452198B07B000CAFAE9 /* powered-by-google-on-non-white@2x.png */,
@@ -791,6 +791,7 @@
 				BFADF5121981AAB8004B856C /* CLOSSignUpDetailViewController.xib in Resources */,
 				13CCD74F199A80050051EF38 /* kml_Heart copy.png in Resources */,
 				EA0E072D197D9253002327E0 /* CLOSSettingsViewController.xib in Resources */,
+				CC1D0E8F19B8D3B7004350F1 /* dark-brown-wood-bg.jpg in Resources */,
 				EAF90F34199BDF4C00372BB7 /* closetDoor[4].jpg in Resources */,
 				EAC0B32D196F04DA004E310D /* InfoPlist.strings in Resources */,
 				13A62CC1199AB60600CD3018 /* newsfeedTab2.png in Resources */,
@@ -809,7 +810,6 @@
 				138A7C88196F0BB4008AD0E9 /* CLOSCreateClosetViewController.xib in Resources */,
 				BFFCD04A19872C460025455A /* CLOSNewsFeedViewController.xib in Resources */,
 				138A7C83196F0BA5008AD0E9 /* CLOSBorrowViewController.xib in Resources */,
-				EA4484A6197F1A150038ECC8 /* dark-brown-wood-bg.jpg in Resources */,
 				EABCC5731986DEA100DDE84A /* CLOSEditClosetLocationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
