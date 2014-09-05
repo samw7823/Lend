@@ -75,6 +75,8 @@
 		BFFCD04E1988624F0025455A /* CLOSNewsFeedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFCD04C1988624F0025455A /* CLOSNewsFeedTableViewCell.m */; };
 		BFFCD04F1988624F0025455A /* CLOSNewsFeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFFCD04D1988624F0025455A /* CLOSNewsFeedTableViewCell.xib */; };
 		CC1D0E8F19B8D3B7004350F1 /* dark-brown-wood-bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC1D0E8E19B8D3B7004350F1 /* dark-brown-wood-bg.jpg */; };
+		CC52AAB919B93423002427D3 /* CLOSPoliciesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC52AAB719B93423002427D3 /* CLOSPoliciesViewController.m */; };
+		CC52AABA19B93423002427D3 /* CLOSPoliciesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC52AAB819B93423002427D3 /* CLOSPoliciesViewController.xib */; };
 		EA0DB6201992D46600CA3D79 /* CLOSReportAUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0DB61F1992D46600CA3D79 /* CLOSReportAUserView.m */; };
 		EA0DB6231992D74F00CA3D79 /* CLOSReportAUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0DB6221992D74F00CA3D79 /* CLOSReportAUserViewController.m */; };
 		EA0DB6261993249800CA3D79 /* CLOSGroupListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0DB6251993249800CA3D79 /* CLOSGroupListTableViewController.m */; };
@@ -254,6 +256,9 @@
 		BFFCD04C1988624F0025455A /* CLOSNewsFeedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSNewsFeedTableViewCell.m; sourceTree = "<group>"; };
 		BFFCD04D1988624F0025455A /* CLOSNewsFeedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSNewsFeedTableViewCell.xib; sourceTree = "<group>"; };
 		CC1D0E8E19B8D3B7004350F1 /* dark-brown-wood-bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dark-brown-wood-bg.jpg"; sourceTree = "<group>"; };
+		CC52AAB619B93423002427D3 /* CLOSPoliciesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSPoliciesViewController.h; sourceTree = "<group>"; };
+		CC52AAB719B93423002427D3 /* CLOSPoliciesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSPoliciesViewController.m; sourceTree = "<group>"; };
+		CC52AAB819B93423002427D3 /* CLOSPoliciesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLOSPoliciesViewController.xib; sourceTree = "<group>"; };
 		EA0DB61E1992D46600CA3D79 /* CLOSReportAUserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSReportAUserView.h; sourceTree = "<group>"; };
 		EA0DB61F1992D46600CA3D79 /* CLOSReportAUserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOSReportAUserView.m; sourceTree = "<group>"; };
 		EA0DB6211992D74E00CA3D79 /* CLOSReportAUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOSReportAUserViewController.h; sourceTree = "<group>"; };
@@ -553,6 +558,9 @@
 				EA32E0CB197ECCD2009219D0 /* CLOSPrivacySettingsViewController.h */,
 				EA32E0CC197ECCD2009219D0 /* CLOSPrivacySettingsViewController.m */,
 				EA32E0CD197ECCD2009219D0 /* CLOSPrivacySettingsViewController.xib */,
+				CC52AAB619B93423002427D3 /* CLOSPoliciesViewController.h */,
+				CC52AAB719B93423002427D3 /* CLOSPoliciesViewController.m */,
+				CC52AAB819B93423002427D3 /* CLOSPoliciesViewController.xib */,
 				EABCC56F1986DEA100DDE84A /* CLOSEditClosetLocationViewController.h */,
 				EABCC5701986DEA100DDE84A /* CLOSEditClosetLocationViewController.m */,
 				EABCC5711986DEA100DDE84A /* CLOSEditClosetLocationViewController.xib */,
@@ -753,6 +761,7 @@
 				EA0DB63519932BAF00CA3D79 /* CLOSAddMemberToGroupViewController.xib in Resources */,
 				EA0DB6301993257C00CA3D79 /* CLOSGroupSearchViewController.xib in Resources */,
 				138A7C7E196F0B98008AD0E9 /* CLOSItemViewController.xib in Resources */,
+				CC52AABA19B93423002427D3 /* CLOSPoliciesViewController.xib in Resources */,
 				13801B6E19749C6B00B2369A /* CLOSSearchViewController.xib in Resources */,
 				BF1571881970497500069252 /* CLOSAddItemToClosetViewController.xib in Resources */,
 				EAF90F32199BD7B000372BB7 /* closetDoor[5].jpg in Resources */,
@@ -847,6 +856,7 @@
 				EA0DB6261993249800CA3D79 /* CLOSGroupListTableViewController.m in Sources */,
 				BF9E217C198FFC0700A83734 /* CLOSMapPopoverViewController.m in Sources */,
 				138A7C78196F0B7B008AD0E9 /* CLOSIndividualClosetViewController.m in Sources */,
+				CC52AAB919B93423002427D3 /* CLOSPoliciesViewController.m in Sources */,
 				138A7C66196F0AE5008AD0E9 /* CLOSProfileViewController.m in Sources */,
 				138A7C73196F0B5A008AD0E9 /* CLOSInventoryViewController.m in Sources */,
 				13801B6D19749C6B00B2369A /* CLOSSearchViewController.m in Sources */,

@@ -19,6 +19,7 @@
 #import "CLOSGroupListTableViewController.h"
 #import "CLOSScreenshotsViewController.h"
 #import "CLOSGeneralViewController.h"
+#import "CLOSPoliciesViewController.h"
 
 #define NUM_PREFERENCES_CELLS 1
 #define NUM_SUPPORT_CELLS 5
@@ -94,7 +95,7 @@ typedef NS_ENUM(NSInteger, sectionNumbers)  {
                     [cell.textLabel setText:@"Report a Problem"];
                     break;
                 case 1:
-                    [cell.textLabel setText:@"Privacy"];
+                    [cell.textLabel setText:@"Privacy Policy/Terms of Use"];
                     break;
                 case 2:
                     [cell.textLabel setText:@"Help"];
@@ -388,6 +389,10 @@ typedef NS_ENUM(NSInteger, sectionNumbers)  {
     else if ([cell.textLabel.text isEqualToString:@"Attributions"]) {
         CLOSGeneralViewController *aboutvc = [[CLOSGeneralViewController alloc] init];
         [self.navigationController pushViewController:aboutvc animated:YES];
+    }
+    else if ([cell.textLabel.text isEqualToString:@"Privacy Policy/Terms of Use"]) {
+        CLOSPoliciesViewController *policiesvc = [[CLOSPoliciesViewController alloc] init];;
+        [self.navigationController pushViewController:policiesvc animated:YES];
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
