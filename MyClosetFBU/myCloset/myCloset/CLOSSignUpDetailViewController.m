@@ -346,6 +346,11 @@
                              imageData];
 }
 
+- (IBAction)viewTermsPressed:(id)sender
+{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://lendapp.weebly.com/about.html"]];
+}
+
 -(void)backgroundTapped
 {
     [self.view endEditing:YES];

@@ -146,7 +146,7 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="errorLabel" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="258" translatesAutoresizingMaskIntoConstraints="NO" id="xzD-bK-eoI">
-                    <rect key="frame" x="42" y="461" width="258" height="21"/>
+                    <rect key="frame" x="42" y="457" width="258" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="11"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -169,12 +169,62 @@
                         <action selector="chooseProfilePicturePressed:" destination="-1" eventType="touchUpInside" id="Kcy-eG-XZh"/>
                     </connections>
                 </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="zsJ-AY-eEq">
+                    <rect key="frame" x="20" y="518" width="280" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <attributedString key="attributedText">
+                        <fragment content="By signing up you agree to our ">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="13" name="STHeitiTC-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="terms">
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="13" name="STHeitiTC-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" and that you have read our ">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="13" name="STHeitiTC-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="privacy policy">
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="13" name="STHeitiTC-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lj2-ja-8dQ">
+                    <rect key="frame" x="159" y="528" width="141" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="viewTermsPressed:" destination="-1" eventType="touchUpInside" id="WfA-wN-Ckl"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="zsJ-AY-eEq" secondAttribute="trailing" constant="20" id="0nU-vA-43Z"/>
+                <constraint firstAttribute="trailing" secondItem="Lj2-ja-8dQ" secondAttribute="trailing" constant="20" id="2mQ-1g-CuI"/>
+                <constraint firstAttribute="bottom" secondItem="zsJ-AY-eEq" secondAttribute="bottom" id="3My-rJ-IYc"/>
                 <constraint firstAttribute="centerX" secondItem="0FX-im-o66" secondAttribute="centerX" id="6Yd-a7-OV9"/>
+                <constraint firstItem="zsJ-AY-eEq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="518" id="EPA-qk-bMz"/>
                 <constraint firstItem="60T-cv-8Jw" firstAttribute="centerX" secondItem="0Qv-QU-MMY" secondAttribute="centerX" id="Hd8-xP-90c"/>
                 <constraint firstItem="0FX-im-o66" firstAttribute="centerX" secondItem="gZ2-u1-4Px" secondAttribute="centerX" id="IXL-PZ-tcZ"/>
+                <constraint firstAttribute="bottom" secondItem="Lj2-ja-8dQ" secondAttribute="bottom" constant="5" id="KCg-l4-Fff"/>
                 <constraint firstItem="gZ2-u1-4Px" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="29" id="RsZ-7A-He4"/>
                 <constraint firstItem="0Qv-QU-MMY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="VHA-BQ-VNf"/>
                 <constraint firstItem="0Qv-QU-MMY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Wdh-PM-mLZ"/>
@@ -182,6 +232,9 @@
                 <constraint firstItem="60T-cv-8Jw" firstAttribute="top" secondItem="0FX-im-o66" secondAttribute="bottom" constant="8" id="fn6-sg-akB"/>
                 <constraint firstItem="0FX-im-o66" firstAttribute="top" secondItem="gZ2-u1-4Px" secondAttribute="bottom" constant="8" id="iZk-OP-BiI"/>
                 <constraint firstAttribute="bottom" secondItem="0Qv-QU-MMY" secondAttribute="bottom" id="l1B-3J-0pC"/>
+                <constraint firstItem="Lj2-ja-8dQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="159" id="nj9-So-P6q"/>
+                <constraint firstItem="zsJ-AY-eEq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="o2C-pW-Ggj"/>
+                <constraint firstItem="Lj2-ja-8dQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="528" id="orh-il-VqG"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
