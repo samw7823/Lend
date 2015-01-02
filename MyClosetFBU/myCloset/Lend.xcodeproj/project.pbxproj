@@ -489,6 +489,7 @@
 				EAC0B331196F04DA004E310D /* CLOSAppDelegate.h */,
 				EAC0B332196F04DA004E310D /* CLOSAppDelegate.m */,
 				EAC0B334196F04DA004E310D /* Images.xcassets */,
+				EAC0B330196F04DA004E310D /* Lend-Prefix.pch */,
 				EAC0B329196F04DA004E310D /* Supporting Files */,
 				BF939ECD196F364300BBEC72 /* CLOSClosetCell.h */,
 				BF939ECE196F364300BBEC72 /* CLOSClosetCell.m */,
@@ -614,7 +615,6 @@
 				EAC0B32A196F04DA004E310D /* Lend-Info.plist */,
 				EAC0B32B196F04DA004E310D /* InfoPlist.strings */,
 				EAC0B32E196F04DA004E310D /* main.m */,
-				EAC0B330196F04DA004E310D /* Lend-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1045,14 +1045,14 @@
 		EAC0B34F196F04DA004E310D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/myCloset.app/myCloset";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Lend.app/Lend";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "myCloset/myCloset-Prefix.pch";
+				GCC_PREFIX_HEADER = "myCloset/Lend-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1067,14 +1067,14 @@
 		EAC0B350196F04DA004E310D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/myCloset.app/myCloset";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Lend.app/Lend";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "myCloset/myCloset-Prefix.pch";
+				GCC_PREFIX_HEADER = "myCloset/Lend-Prefix.pch";
 				INFOPLIST_FILE = "myClosetTests/LendTests-Info.plist";
 				PRODUCT_NAME = LendTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";

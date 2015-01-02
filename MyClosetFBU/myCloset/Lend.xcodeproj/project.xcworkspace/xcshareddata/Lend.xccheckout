@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BB3D7D6E-D63F-4385-AB19-0DCD73C60595</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Lend</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D45A84AD30DD12B05061C9EE6C18FCC2DC88CE77</key>
+		<string>https://github.com/samw7823/Lend.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MyClosetFBU/myCloset/Lend.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D45A84AD30DD12B05061C9EE6C18FCC2DC88CE77</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/samw7823/Lend.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D45A84AD30DD12B05061C9EE6C18FCC2DC88CE77</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D45A84AD30DD12B05061C9EE6C18FCC2DC88CE77</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Lend</string>
+		</dict>
+	</array>
+</dict>
+</plist>

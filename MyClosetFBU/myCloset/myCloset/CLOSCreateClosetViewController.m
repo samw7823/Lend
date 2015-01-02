@@ -515,7 +515,15 @@
     if ([CLLocationManager locationServicesEnabled]) { // location services enabled
         CLLocationManager *locationManager = [[CLLocationManager alloc] init];
         locationManager.delegate = self;
-        [locationManager startMonitoringSignificantLocationChanges];
+        if ([locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+            [locationManager requestWhenInUseAuthorization];
+        }
+        if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorizedWhenInUse){
+            [locationManager startMonitoringSignificantLocationChanges];
+        }
+        else {
+            locationManager = nil;
+        }
         CLLocation *location = locationManager.location;
         //save address lines
         CLGeocoder *geocoder = [[CLGeocoder alloc] init];

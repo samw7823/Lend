@@ -436,6 +436,15 @@
     if ([CLLocationManager locationServicesEnabled]) {
         CLLocationManager *locationManager = [[CLLocationManager alloc] init];
         locationManager.delegate = self;
+        if ([locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+            [locationManager requestWhenInUseAuthorization];
+        }
+        if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorizedWhenInUse){
+            [locationManager startMonitoringSignificantLocationChanges];
+        }
+        else {
+            locationManager = nil;
+        }
         CLLocation *location = locationManager.location;
         //save address lines
         CLGeocoder *geocoder = [[CLGeocoder alloc] init];
@@ -474,7 +483,12 @@
                         for (PFObject *closet in self.closetsSelected) {
                             closet[@"geopoint"] = self.geopoint;
                             closet[@"FormattedAddressLines"] = self.placemarkGeneral.addressDictionary[@"FormattedAddressLines"];
-                            [closet saveInBackground];
+                            [closet saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                                if (succeeded)
+                                    NSLog(@"good");
+                                else
+                                    NSLog(@"bad");
+                            }];
                         }
                         self.closetsSelected = nil;
                         [self.navigationController popViewControllerAnimated:YES];

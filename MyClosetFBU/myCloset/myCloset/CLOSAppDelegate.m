@@ -39,10 +39,21 @@ typedef NS_ENUM (NSInteger, verificationState) {
     [Parse setApplicationId:@"r0QEPBDtR7d2FdgkCclWCmrBE0Ae48GlPB8tdz96"
                   clientKey:@"XtEqInDDzls72AVG6yUI5ugT9xPHak1ekIuDBJwS"];
     
-    //Register for push notifications
-    [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|
-                                                    UIRemoteNotificationTypeAlert|
-                                                    UIRemoteNotificationTypeSound];
+//    //Register for push notifications
+//    [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|
+//                                                    UIRemoteNotificationTypeAlert|
+//                                                    UIRemoteNotificationTypeSound];
+    
+    
+    if ([application respondsToSelector:@selector(registerUserNotificationSettings:)]) {
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:(UIRemoteNotificationTypeBadge|UIRemoteNotificationTypeSound|UIRemoteNotificationTypeAlert) categories:nil];
+        [application registerUserNotificationSettings:settings];
+    } else {
+        UIRemoteNotificationType myTypes = UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeSound;
+        [application registerForRemoteNotificationTypes:myTypes];
+    }
+    
+    
     
     
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];

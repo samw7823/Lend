@@ -45,6 +45,7 @@
 @property (strong, nonatomic) NSTimer *flashTimer;
 @property (strong, nonatomic) UIImagePickerController *imagePicker;
 @property (strong, nonatomic) CLLocationManager *locationManager;
+@property (strong, nonatomic) CLLocationManager *locationManagerClosestsNearby;
 @property (strong, nonatomic) NSMutableData *imageData;
 @property (strong, nonatomic) UIActivityIndicatorView *loadingIndicator;
 @property (strong, nonatomic) UITableView *groupListTableView;
@@ -208,13 +209,25 @@ typedef NS_ENUM(NSInteger, tutorialStates) {
     self.usernameLabel.text = self.user.username;
     self.usernameLabel.adjustsFontSizeToFitWidth = YES;
     
-    
+
     if ([CLLocationManager locationServicesEnabled]) {
         self.locationManager = [[CLLocationManager alloc] init];
-        [self.locationManager startUpdatingLocation];
-        [self.locationManager stopUpdatingLocation];
+        self.locationManager.delegate = self;
+        if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+            [self.locationManager requestWhenInUseAuthorization];
+        }
+        if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorizedWhenInUse) {
+            [self.locationManager startUpdatingLocation];
+        }
+       // [self.locationManager stopUpdatingLocation];
     }
 
+}
+
+- (void) locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    if ([manager isEqual:self.locationManager])
+        [manager stopUpdatingLocation];
 }
 
 - (void) viewWillAppear:(BOOL)animated
@@ -858,10 +871,16 @@ typedef NS_ENUM(NSInteger, tutorialStates) {
         }
     }
     
+
     if ([CLLocationManager locationServicesEnabled]) {
-        CLLocationManager *locationManager = [[CLLocationManager alloc] init];
-        locationManager.delegate = self;
-        CLLocation *location = locationManager.location;
+        self.locationManagerClosestsNearby = [[CLLocationManager alloc] init];
+        self.locationManagerClosestsNearby.delegate = self;
+        if ([self.locationManagerClosestsNearby respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+            [self.locationManagerClosestsNearby requestWhenInUseAuthorization];
+        }
+        CLLocation *location;
+        if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorizedWhenInUse && [CLLocationManager locationServicesEnabled])
+            location = self.locationManagerClosestsNearby.location;
         CLGeocoder *geocoder = [[CLGeocoder alloc] init];
         [geocoder reverseGeocodeLocation:location completionHandler:^(NSArray *placemarks, NSError *error) {
             // location services turned off for this app
